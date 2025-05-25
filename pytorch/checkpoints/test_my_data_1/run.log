@@ -1,0 +1,689 @@
+Namespace(exp_name='test_my_data_1', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='', predict=False, predict_path='')
+Using GPU : 0 from 1 devices
+Train 0, loss: 0.585152, train acc: 0.932242, train avg acc: 0.929134, IoU: 0.865676
+Test 0, loss: 0.523454, test acc: 0.964963, test avg acc: 0.963702, IoU: 0.922725, time: 165.67 s
+Train 1, loss: 0.529876, train acc: 0.960761, train avg acc: 0.959579, IoU: 0.919811
+Test 1, loss: 0.520703, test acc: 0.968611, test avg acc: 0.966363, IoU: 0.930256, time: 163.12 s
+Train 2, loss: 0.522778, train acc: 0.966011, train avg acc: 0.964899, IoU: 0.930103
+Test 2, loss: 0.519241, test acc: 0.969795, test avg acc: 0.960352, IoU: 0.931849, time: 163.19 s
+Train 3, loss: 0.520367, train acc: 0.968933, train avg acc: 0.967894, IoU: 0.935889
+Test 3, loss: 0.518054, test acc: 0.971952, test avg acc: 0.968828, IoU: 0.937255, time: 163.08 s
+Train 4, loss: 0.519489, train acc: 0.969985, train avg acc: 0.968872, IoU: 0.937974
+Test 4, loss: 0.516689, test acc: 0.974365, test avg acc: 0.970706, IoU: 0.942377, time: 163.16 s
+Train 5, loss: 0.518232, train acc: 0.971952, train avg acc: 0.970818, IoU: 0.941893
+Test 5, loss: 0.516576, test acc: 0.974895, test avg acc: 0.972345, IoU: 0.943638, time: 163.05 s
+Train 6, loss: 0.517919, train acc: 0.972245, train avg acc: 0.971031, IoU: 0.942471
+Test 6, loss: 0.517207, test acc: 0.974065, test avg acc: 0.969726, IoU: 0.941656, time: 163.12 s
+Train 7, loss: 0.517199, train acc: 0.973122, train avg acc: 0.971912, IoU: 0.944229
+Test 7, loss: 0.515151, test acc: 0.976440, test avg acc: 0.973579, IoU: 0.946947, time: 163.17 s
+Train 8, loss: 0.516588, train acc: 0.973999, train avg acc: 0.972793, IoU: 0.945987
+Test 8, loss: 0.516927, test acc: 0.973701, test avg acc: 0.967619, IoU: 0.940674, time: 163.10 s
+Train 9, loss: 0.516518, train acc: 0.974091, train avg acc: 0.972761, IoU: 0.946160
+Test 9, loss: 0.521618, test acc: 0.965893, test avg acc: 0.952343, IoU: 0.922908, time: 163.25 s
+Train 10, loss: 0.516583, train acc: 0.974066, train avg acc: 0.972768, IoU: 0.946121
+Test 10, loss: 0.514301, test acc: 0.977282, test avg acc: 0.970617, IoU: 0.948399, time: 163.03 s
+Train 11, loss: 0.516304, train acc: 0.974538, train avg acc: 0.973251, IoU: 0.947067
+Test 11, loss: 0.516821, test acc: 0.974553, test avg acc: 0.967678, IoU: 0.942430, time: 163.20 s
+Train 12, loss: 0.516054, train acc: 0.974732, train avg acc: 0.973470, IoU: 0.947462
+Test 12, loss: 0.515478, test acc: 0.975447, test avg acc: 0.969236, IoU: 0.944445, time: 163.24 s
+Train 13, loss: 0.515185, train acc: 0.976226, train avg acc: 0.974967, IoU: 0.950473
+Test 13, loss: 0.515363, test acc: 0.976279, test avg acc: 0.974508, IoU: 0.946706, time: 163.24 s
+Train 14, loss: 0.515736, train acc: 0.975227, train avg acc: 0.973911, IoU: 0.948456
+Test 14, loss: 0.514689, test acc: 0.977103, test avg acc: 0.973850, IoU: 0.948347, time: 163.27 s
+Train 15, loss: 0.515534, train acc: 0.975422, train avg acc: 0.974106, IoU: 0.948847
+Test 15, loss: 0.513955, test acc: 0.977946, test avg acc: 0.971905, IoU: 0.949914, time: 163.25 s
+Train 16, loss: 0.515658, train acc: 0.975410, train avg acc: 0.974053, IoU: 0.948820
+Test 16, loss: 0.514234, test acc: 0.977820, test avg acc: 0.971315, IoU: 0.949593, time: 163.11 s
+Train 17, loss: 0.515346, train acc: 0.975835, train avg acc: 0.974579, IoU: 0.949686
+Test 17, loss: 0.518354, test acc: 0.970065, test avg acc: 0.962295, IoU: 0.932644, time: 163.44 s
+Train 18, loss: 0.515053, train acc: 0.976304, train avg acc: 0.975034, IoU: 0.950630
+Test 18, loss: 0.514305, test acc: 0.977159, test avg acc: 0.970657, IoU: 0.948148, time: 163.76 s
+Train 19, loss: 0.515047, train acc: 0.976452, train avg acc: 0.975217, IoU: 0.950934
+Test 19, loss: 0.513620, test acc: 0.978555, test avg acc: 0.975053, IoU: 0.951487, time: 163.69 s
+Train 20, loss: 0.515545, train acc: 0.975590, train avg acc: 0.974224, IoU: 0.949181
+Test 20, loss: 0.513957, test acc: 0.978450, test avg acc: 0.975149, IoU: 0.951277, time: 163.62 s
+Train 21, loss: 0.514980, train acc: 0.976516, train avg acc: 0.975111, IoU: 0.951048
+Test 21, loss: 0.514523, test acc: 0.977925, test avg acc: 0.970778, IoU: 0.949760, time: 163.47 s
+Train 22, loss: 0.515239, train acc: 0.976158, train avg acc: 0.974846, IoU: 0.950334
+Test 22, loss: 0.514695, test acc: 0.976856, test avg acc: 0.974585, IoU: 0.947906, time: 163.66 s
+Train 23, loss: 0.514358, train acc: 0.977399, train avg acc: 0.976156, IoU: 0.952849
+Test 23, loss: 0.513214, test acc: 0.979544, test avg acc: 0.975875, IoU: 0.953637, time: 163.36 s
+Train 24, loss: 0.514980, train acc: 0.976494, train avg acc: 0.975191, IoU: 0.951012
+Test 24, loss: 0.513392, test acc: 0.979172, test avg acc: 0.975917, IoU: 0.952860, time: 163.45 s
+Train 25, loss: 0.515277, train acc: 0.975991, train avg acc: 0.974615, IoU: 0.949990
+Test 25, loss: 0.514718, test acc: 0.976660, test avg acc: 0.971666, IoU: 0.947210, time: 164.15 s
+Train 26, loss: 0.515069, train acc: 0.976364, train avg acc: 0.975042, IoU: 0.950750
+Test 26, loss: 0.515242, test acc: 0.979170, test avg acc: 0.977199, IoU: 0.952968, time: 163.39 s
+Train 27, loss: 0.514142, train acc: 0.977775, train avg acc: 0.976505, IoU: 0.953611
+Test 27, loss: 0.515143, test acc: 0.977294, test avg acc: 0.974833, IoU: 0.948839, time: 163.61 s
+Train 28, loss: 0.515492, train acc: 0.975643, train avg acc: 0.974277, IoU: 0.949285
+Test 28, loss: 0.515977, test acc: 0.975548, test avg acc: 0.971531, IoU: 0.944896, time: 163.41 s
+Train 29, loss: 0.514591, train acc: 0.977075, train avg acc: 0.975750, IoU: 0.952187
+Test 29, loss: 0.513766, test acc: 0.978264, test avg acc: 0.972691, IoU: 0.950657, time: 163.70 s
+Train 30, loss: 0.514348, train acc: 0.977457, train avg acc: 0.976173, IoU: 0.952962
+Test 30, loss: 0.512879, test acc: 0.980368, test avg acc: 0.976196, IoU: 0.955402, time: 163.38 s
+Train 31, loss: 0.515027, train acc: 0.976366, train avg acc: 0.975030, IoU: 0.950746
+Test 31, loss: 0.514183, test acc: 0.978274, test avg acc: 0.974554, IoU: 0.950854, time: 163.67 s
+Train 32, loss: 0.514671, train acc: 0.976891, train avg acc: 0.975538, IoU: 0.951810
+Test 32, loss: 0.513526, test acc: 0.978841, test avg acc: 0.976215, IoU: 0.952191, time: 163.35 s
+Train 33, loss: 0.514203, train acc: 0.977708, train avg acc: 0.976393, IoU: 0.953468
+Test 33, loss: 0.514771, test acc: 0.976792, test avg acc: 0.971650, IoU: 0.947483, time: 163.54 s
+Train 34, loss: 0.514019, train acc: 0.977943, train avg acc: 0.976696, IoU: 0.953955
+Test 34, loss: 0.514557, test acc: 0.977126, test avg acc: 0.974297, IoU: 0.948439, time: 163.45 s
+Train 35, loss: 0.515676, train acc: 0.975426, train avg acc: 0.974083, IoU: 0.948851
+Test 35, loss: 0.514123, test acc: 0.977968, test avg acc: 0.973615, IoU: 0.950126, time: 163.56 s
+Train 36, loss: 0.514463, train acc: 0.977320, train avg acc: 0.975994, IoU: 0.952683
+Test 36, loss: 0.517802, test acc: 0.972970, test avg acc: 0.972282, IoU: 0.939707, time: 163.52 s
+Train 37, loss: 0.514177, train acc: 0.977773, train avg acc: 0.976515, IoU: 0.953606
+Test 37, loss: 0.513939, test acc: 0.977665, test avg acc: 0.972710, IoU: 0.949407, time: 163.61 s
+Train 38, loss: 0.514953, train acc: 0.976473, train avg acc: 0.975127, IoU: 0.950965
+Test 38, loss: 0.513131, test acc: 0.979318, test avg acc: 0.975044, IoU: 0.953088, time: 163.66 s
+Train 39, loss: 0.514019, train acc: 0.977947, train avg acc: 0.976647, IoU: 0.953960
+Test 39, loss: 0.513488, test acc: 0.979366, test avg acc: 0.974680, IoU: 0.953155, time: 163.34 s
+Train 40, loss: 0.514156, train acc: 0.977778, train avg acc: 0.976462, IoU: 0.953617
+Test 40, loss: 0.512587, test acc: 0.980332, test avg acc: 0.977741, IoU: 0.955459, time: 163.68 s
+Train 41, loss: 0.514406, train acc: 0.977436, train avg acc: 0.976059, IoU: 0.952915
+Test 41, loss: 0.519440, test acc: 0.969477, test avg acc: 0.968603, IoU: 0.932260, time: 163.30 s
+Train 42, loss: 0.514899, train acc: 0.976706, train avg acc: 0.975352, IoU: 0.951433
+Test 42, loss: 0.512796, test acc: 0.980081, test avg acc: 0.975270, IoU: 0.954715, time: 163.73 s
+Train 43, loss: 0.514385, train acc: 0.977448, train avg acc: 0.976182, IoU: 0.952950
+Test 43, loss: 0.513490, test acc: 0.978662, test avg acc: 0.972467, IoU: 0.951471, time: 163.36 s
+Train 44, loss: 0.513735, train acc: 0.978387, train avg acc: 0.977026, IoU: 0.954846
+Test 44, loss: 0.515324, test acc: 0.975833, test avg acc: 0.974845, IoU: 0.945821, time: 163.54 s
+Train 45, loss: 0.514451, train acc: 0.977158, train avg acc: 0.975825, IoU: 0.952354
+Test 45, loss: 0.518394, test acc: 0.970003, test avg acc: 0.963971, IoU: 0.932735, time: 163.35 s
+Train 46, loss: 0.514743, train acc: 0.976850, train avg acc: 0.975512, IoU: 0.951727
+Test 46, loss: 0.513506, test acc: 0.978610, test avg acc: 0.973854, IoU: 0.951491, time: 163.43 s
+Train 47, loss: 0.513713, train acc: 0.978482, train avg acc: 0.977267, IoU: 0.955051
+Test 47, loss: 0.514142, test acc: 0.978659, test avg acc: 0.975958, IoU: 0.951789, time: 164.03 s
+Train 48, loss: 0.514359, train acc: 0.977402, train avg acc: 0.976073, IoU: 0.952849
+Test 48, loss: 0.513615, test acc: 0.978755, test avg acc: 0.975757, IoU: 0.951971, time: 163.43 s
+Train 49, loss: 0.514388, train acc: 0.977408, train avg acc: 0.976081, IoU: 0.952862
+Test 49, loss: 0.516086, test acc: 0.974720, test avg acc: 0.971651, IoU: 0.943205, time: 163.71 s
+Train 50, loss: 0.513682, train acc: 0.978510, train avg acc: 0.977258, IoU: 0.955102
+Test 50, loss: 0.512748, test acc: 0.980038, test avg acc: 0.978366, IoU: 0.954893, time: 163.30 s
+Train 51, loss: 0.513876, train acc: 0.978137, train avg acc: 0.976866, IoU: 0.954344
+Test 51, loss: 0.514840, test acc: 0.976180, test avg acc: 0.974217, IoU: 0.946472, time: 163.76 s
+Train 52, loss: 0.514002, train acc: 0.978009, train avg acc: 0.976612, IoU: 0.954078
+Test 52, loss: 0.512766, test acc: 0.980300, test avg acc: 0.976903, IoU: 0.955319, time: 163.37 s
+Train 53, loss: 0.514173, train acc: 0.977846, train avg acc: 0.976513, IoU: 0.953748
+Test 53, loss: 0.514056, test acc: 0.977783, test avg acc: 0.971251, IoU: 0.949511, time: 163.60 s
+Train 54, loss: 0.514244, train acc: 0.977558, train avg acc: 0.976184, IoU: 0.953165
+Test 54, loss: 0.513972, test acc: 0.978564, test avg acc: 0.974747, IoU: 0.951478, time: 163.52 s
+Train 55, loss: 0.513958, train acc: 0.978035, train avg acc: 0.976728, IoU: 0.954138
+Test 55, loss: 0.514119, test acc: 0.977697, test avg acc: 0.971404, IoU: 0.949345, time: 163.57 s
+Train 56, loss: 0.513438, train acc: 0.978844, train avg acc: 0.977554, IoU: 0.955787
+Test 56, loss: 0.511904, test acc: 0.981083, test avg acc: 0.978149, IoU: 0.957081, time: 163.32 s
+Train 57, loss: 0.514294, train acc: 0.977515, train avg acc: 0.976193, IoU: 0.953084
+Test 57, loss: 0.516523, test acc: 0.974365, test avg acc: 0.968010, IoU: 0.942081, time: 163.43 s
+Train 58, loss: 0.513951, train acc: 0.978029, train avg acc: 0.976769, IoU: 0.954130
+Test 58, loss: 0.513733, test acc: 0.979156, test avg acc: 0.975476, IoU: 0.952785, time: 163.65 s
+Train 59, loss: 0.513695, train acc: 0.978527, train avg acc: 0.977280, IoU: 0.955146
+Test 59, loss: 0.513698, test acc: 0.978298, test avg acc: 0.972023, IoU: 0.950664, time: 163.96 s
+Train 60, loss: 0.513535, train acc: 0.978641, train avg acc: 0.977407, IoU: 0.955373
+Test 60, loss: 0.513495, test acc: 0.979250, test avg acc: 0.977040, IoU: 0.953123, time: 163.53 s
+Train 61, loss: 0.514017, train acc: 0.977958, train avg acc: 0.976628, IoU: 0.953975
+Test 61, loss: 0.511795, test acc: 0.981514, test avg acc: 0.977253, IoU: 0.957922, time: 163.21 s
+Train 62, loss: 0.513883, train acc: 0.978232, train avg acc: 0.976873, IoU: 0.954531
+Test 62, loss: 0.516409, test acc: 0.974762, test avg acc: 0.970156, IoU: 0.943132, time: 163.45 s
+Train 63, loss: 0.513987, train acc: 0.978147, train avg acc: 0.976933, IoU: 0.954375
+Test 63, loss: 0.514959, test acc: 0.977069, test avg acc: 0.973831, IoU: 0.948274, time: 162.92 s
+Train 64, loss: 0.513231, train acc: 0.979156, train avg acc: 0.977944, IoU: 0.956428
+Test 64, loss: 0.512685, test acc: 0.980796, test avg acc: 0.978433, IoU: 0.956497, time: 163.20 s
+Train 65, loss: 0.513668, train acc: 0.978524, train avg acc: 0.977330, IoU: 0.955139
+Test 65, loss: 0.512688, test acc: 0.980476, test avg acc: 0.977349, IoU: 0.955728, time: 162.92 s
+Train 66, loss: 0.513387, train acc: 0.978860, train avg acc: 0.977617, IoU: 0.955818
+Test 66, loss: 0.513324, test acc: 0.978859, test avg acc: 0.975171, IoU: 0.952134, time: 163.08 s
+Train 67, loss: 0.513699, train acc: 0.978360, train avg acc: 0.977105, IoU: 0.954802
+Test 67, loss: 0.512525, test acc: 0.980177, test avg acc: 0.976249, IoU: 0.955003, time: 163.72 s
+Train 68, loss: 0.513583, train acc: 0.978620, train avg acc: 0.977395, IoU: 0.955332
+Test 68, loss: 0.512367, test acc: 0.980729, test avg acc: 0.977645, IoU: 0.956290, time: 163.44 s
+Train 69, loss: 0.513238, train acc: 0.979206, train avg acc: 0.977935, IoU: 0.956520
+Test 69, loss: 0.514925, test acc: 0.978376, test avg acc: 0.975905, IoU: 0.951192, time: 163.43 s
+Train 70, loss: 0.513722, train acc: 0.978245, train avg acc: 0.976962, IoU: 0.954566
+Test 70, loss: 0.512758, test acc: 0.980254, test avg acc: 0.976653, IoU: 0.955201, time: 163.20 s
+Train 71, loss: 0.513430, train acc: 0.978852, train avg acc: 0.977587, IoU: 0.955802
+Test 71, loss: 0.515781, test acc: 0.974466, test avg acc: 0.965621, IoU: 0.942021, time: 163.74 s
+Train 72, loss: 0.514003, train acc: 0.978021, train avg acc: 0.976693, IoU: 0.954107
+Test 72, loss: 0.512348, test acc: 0.980726, test avg acc: 0.977131, IoU: 0.956240, time: 163.49 s
+Train 73, loss: 0.513590, train acc: 0.978575, train avg acc: 0.977301, IoU: 0.955239
+Test 73, loss: 0.513066, test acc: 0.979791, test avg acc: 0.974823, IoU: 0.954063, time: 163.25 s
+Train 74, loss: 0.512985, train acc: 0.979479, train avg acc: 0.978243, IoU: 0.957080
+Test 74, loss: 0.512196, test acc: 0.981183, test avg acc: 0.979399, IoU: 0.957394, time: 163.28 s
+Train 75, loss: 0.513200, train acc: 0.979144, train avg acc: 0.977958, IoU: 0.956404
+Test 75, loss: 0.518359, test acc: 0.971334, test avg acc: 0.964506, IoU: 0.935487, time: 163.43 s
+Train 76, loss: 0.513519, train acc: 0.978723, train avg acc: 0.977402, IoU: 0.955539
+Test 76, loss: 0.512175, test acc: 0.980539, test avg acc: 0.975653, IoU: 0.955717, time: 163.21 s
+Train 77, loss: 0.513358, train acc: 0.978905, train avg acc: 0.977625, IoU: 0.955902
+Test 77, loss: 0.512269, test acc: 0.981357, test avg acc: 0.977306, IoU: 0.957593, time: 163.31 s
+Train 78, loss: 0.514793, train acc: 0.976865, train avg acc: 0.975573, IoU: 0.951761
+Test 78, loss: 0.517212, test acc: 0.972933, test avg acc: 0.967907, IoU: 0.939138, time: 163.43 s
+Train 79, loss: 0.513532, train acc: 0.978664, train avg acc: 0.977430, IoU: 0.955426
+Test 79, loss: 0.515791, test acc: 0.974387, test avg acc: 0.965847, IoU: 0.941883, time: 163.18 s
+Train 80, loss: 0.512954, train acc: 0.979485, train avg acc: 0.978247, IoU: 0.957093
+Test 80, loss: 0.511751, test acc: 0.982045, test avg acc: 0.979163, IoU: 0.959203, time: 163.59 s
+Train 81, loss: 0.513369, train acc: 0.978847, train avg acc: 0.977617, IoU: 0.955793
+Test 81, loss: 0.512514, test acc: 0.980435, test avg acc: 0.978972, IoU: 0.955778, time: 163.38 s
+Train 82, loss: 0.513699, train acc: 0.978302, train avg acc: 0.977017, IoU: 0.954679
+Test 82, loss: 0.513986, test acc: 0.977907, test avg acc: 0.971348, IoU: 0.949779, time: 163.36 s
+Train 83, loss: 0.513186, train acc: 0.979184, train avg acc: 0.977976, IoU: 0.956482
+Test 83, loss: 0.512704, test acc: 0.980067, test avg acc: 0.974737, IoU: 0.954639, time: 163.31 s
+Train 84, loss: 0.513280, train acc: 0.979079, train avg acc: 0.977842, IoU: 0.956267
+Test 84, loss: 0.512409, test acc: 0.981079, test avg acc: 0.977875, IoU: 0.957048, time: 163.57 s
+Train 85, loss: 0.512608, train acc: 0.980162, train avg acc: 0.979007, IoU: 0.958480
+Test 85, loss: 0.513191, test acc: 0.979640, test avg acc: 0.976435, IoU: 0.953888, time: 163.07 s
+Train 86, loss: 0.514070, train acc: 0.977785, train avg acc: 0.976445, IoU: 0.953624
+Test 86, loss: 0.513681, test acc: 0.978388, test avg acc: 0.974308, IoU: 0.951070, time: 163.38 s
+Train 87, loss: 0.512514, train acc: 0.980228, train avg acc: 0.979111, IoU: 0.958623
+Test 87, loss: 0.513521, test acc: 0.978844, test avg acc: 0.974667, IoU: 0.952058, time: 163.15 s
+Train 88, loss: 0.512940, train acc: 0.979532, train avg acc: 0.978303, IoU: 0.957189
+Test 88, loss: 0.513662, test acc: 0.979340, test avg acc: 0.978511, IoU: 0.953441, time: 163.26 s
+Train 89, loss: 0.513106, train acc: 0.979247, train avg acc: 0.978020, IoU: 0.956611
+Test 89, loss: 0.515759, test acc: 0.974945, test avg acc: 0.966493, IoU: 0.943107, time: 163.48 s
+Train 90, loss: 0.513535, train acc: 0.978558, train avg acc: 0.977262, IoU: 0.955198
+Test 90, loss: 0.512351, test acc: 0.980980, test avg acc: 0.977337, IoU: 0.956794, time: 163.09 s
+Train 91, loss: 0.512742, train acc: 0.979908, train avg acc: 0.978700, IoU: 0.957957
+Test 91, loss: 0.512079, test acc: 0.981107, test avg acc: 0.977287, IoU: 0.957059, time: 163.18 s
+Train 92, loss: 0.512805, train acc: 0.979684, train avg acc: 0.978483, IoU: 0.957502
+Test 92, loss: 0.512424, test acc: 0.980694, test avg acc: 0.977769, IoU: 0.956226, time: 163.26 s
+Train 93, loss: 0.513079, train acc: 0.979315, train avg acc: 0.978121, IoU: 0.956751
+Test 93, loss: 0.512123, test acc: 0.981005, test avg acc: 0.978423, IoU: 0.956937, time: 163.42 s
+Train 94, loss: 0.512755, train acc: 0.979876, train avg acc: 0.978682, IoU: 0.957893
+Test 94, loss: 0.512015, test acc: 0.981052, test avg acc: 0.977668, IoU: 0.956975, time: 163.16 s
+Train 95, loss: 0.513207, train acc: 0.979022, train avg acc: 0.977814, IoU: 0.956152
+Test 95, loss: 0.512489, test acc: 0.980301, test avg acc: 0.975286, IoU: 0.955183, time: 163.41 s
+Train 96, loss: 0.512502, train acc: 0.980312, train avg acc: 0.979101, IoU: 0.958781
+Test 96, loss: 0.514791, test acc: 0.976231, test avg acc: 0.971895, IoU: 0.946344, time: 163.16 s
+Train 97, loss: 0.512825, train acc: 0.979778, train avg acc: 0.978560, IoU: 0.957693
+Test 97, loss: 0.513042, test acc: 0.979626, test avg acc: 0.974177, IoU: 0.953659, time: 163.50 s
+Train 98, loss: 0.512835, train acc: 0.979711, train avg acc: 0.978465, IoU: 0.957552
+Test 98, loss: 0.515171, test acc: 0.977016, test avg acc: 0.977060, IoU: 0.948476, time: 163.12 s
+Train 99, loss: 0.512908, train acc: 0.979592, train avg acc: 0.978352, IoU: 0.957315
+Test 99, loss: 0.513239, test acc: 0.978921, test avg acc: 0.973019, IoU: 0.952068, time: 163.20 s
+Train 100, loss: 0.513095, train acc: 0.979274, train avg acc: 0.978060, IoU: 0.956664
+Test 100, loss: 0.511510, test acc: 0.981961, test avg acc: 0.980013, IoU: 0.959091, time: 163.33 s
+Train 101, loss: 0.512714, train acc: 0.979802, train avg acc: 0.978595, IoU: 0.957745
+Test 101, loss: 0.513070, test acc: 0.980748, test avg acc: 0.978285, IoU: 0.956383, time: 163.27 s
+Train 102, loss: 0.512835, train acc: 0.979656, train avg acc: 0.978409, IoU: 0.957440
+Test 102, loss: 0.515343, test acc: 0.975454, test avg acc: 0.968132, IoU: 0.944340, time: 163.44 s
+Train 103, loss: 0.512802, train acc: 0.979636, train avg acc: 0.978413, IoU: 0.957404
+Test 103, loss: 0.512247, test acc: 0.980712, test avg acc: 0.978352, IoU: 0.956312, time: 163.27 s
+Train 104, loss: 0.512475, train acc: 0.980336, train avg acc: 0.979142, IoU: 0.958830
+Test 104, loss: 0.512141, test acc: 0.980849, test avg acc: 0.975590, IoU: 0.956369, time: 163.78 s
+Train 105, loss: 0.512749, train acc: 0.979820, train avg acc: 0.978552, IoU: 0.957770
+Test 105, loss: 0.511948, test acc: 0.981624, test avg acc: 0.978090, IoU: 0.958223, time: 162.89 s
+Train 106, loss: 0.512345, train acc: 0.980360, train avg acc: 0.979196, IoU: 0.958881
+Test 106, loss: 0.512180, test acc: 0.980833, test avg acc: 0.975911, IoU: 0.956363, time: 163.45 s
+Train 107, loss: 0.513130, train acc: 0.979166, train avg acc: 0.977971, IoU: 0.956446
+Test 107, loss: 0.515145, test acc: 0.975624, test avg acc: 0.973953, IoU: 0.945301, time: 163.08 s
+Train 108, loss: 0.512810, train acc: 0.979698, train avg acc: 0.978489, IoU: 0.957527
+Test 108, loss: 0.512671, test acc: 0.979900, test avg acc: 0.977170, IoU: 0.954500, time: 163.41 s
+Train 109, loss: 0.512671, train acc: 0.979906, train avg acc: 0.978743, IoU: 0.957961
+Test 109, loss: 0.512325, test acc: 0.981284, test avg acc: 0.978818, IoU: 0.957561, time: 163.51 s
+Train 110, loss: 0.512546, train acc: 0.980144, train avg acc: 0.978968, IoU: 0.958444
+Test 110, loss: 0.512477, test acc: 0.980299, test avg acc: 0.977576, IoU: 0.955376, time: 163.41 s
+Train 111, loss: 0.512386, train acc: 0.980423, train avg acc: 0.979225, IoU: 0.959005
+Test 111, loss: 0.512853, test acc: 0.979711, test avg acc: 0.975669, IoU: 0.953971, time: 163.26 s
+Train 112, loss: 0.512702, train acc: 0.979880, train avg acc: 0.978702, IoU: 0.957906
+Test 112, loss: 0.511915, test acc: 0.981420, test avg acc: 0.978582, IoU: 0.957830, time: 163.34 s
+Train 113, loss: 0.512305, train acc: 0.980490, train avg acc: 0.979335, IoU: 0.959148
+Test 113, loss: 0.513416, test acc: 0.979924, test avg acc: 0.976028, IoU: 0.954450, time: 163.23 s
+Train 114, loss: 0.512377, train acc: 0.980379, train avg acc: 0.979200, IoU: 0.958920
+Test 114, loss: 0.511706, test acc: 0.981628, test avg acc: 0.978054, IoU: 0.958229, time: 163.32 s
+Train 115, loss: 0.512451, train acc: 0.980250, train avg acc: 0.979037, IoU: 0.958654
+Test 115, loss: 0.512056, test acc: 0.980749, test avg acc: 0.976865, IoU: 0.956265, time: 163.62 s
+Train 116, loss: 0.512761, train acc: 0.979828, train avg acc: 0.978592, IoU: 0.957790
+Test 116, loss: 0.511971, test acc: 0.981191, test avg acc: 0.979168, IoU: 0.957391, time: 163.18 s
+Train 117, loss: 0.512428, train acc: 0.980265, train avg acc: 0.979077, IoU: 0.958687
+Test 117, loss: 0.513321, test acc: 0.979411, test avg acc: 0.975420, IoU: 0.953317, time: 163.41 s
+Train 118, loss: 0.512849, train acc: 0.979697, train avg acc: 0.978446, IoU: 0.957519
+Test 118, loss: 0.511605, test acc: 0.982066, test avg acc: 0.979158, IoU: 0.959249, time: 163.15 s
+Train 119, loss: 0.512314, train acc: 0.980513, train avg acc: 0.979316, IoU: 0.959191
+Test 119, loss: 0.512482, test acc: 0.980221, test avg acc: 0.975691, IoU: 0.955048, time: 163.42 s
+Train 120, loss: 0.512394, train acc: 0.980374, train avg acc: 0.979128, IoU: 0.958902
+Test 120, loss: 0.511921, test acc: 0.981426, test avg acc: 0.979458, IoU: 0.957913, time: 163.27 s
+Train 121, loss: 0.512430, train acc: 0.980321, train avg acc: 0.979130, IoU: 0.958798
+Test 121, loss: 0.513124, test acc: 0.979264, test avg acc: 0.976027, IoU: 0.953063, time: 163.29 s
+Train 122, loss: 0.512569, train acc: 0.980068, train avg acc: 0.978884, IoU: 0.958286
+Test 122, loss: 0.513443, test acc: 0.978841, test avg acc: 0.972553, IoU: 0.951854, time: 163.46 s
+Train 123, loss: 0.512688, train acc: 0.979838, train avg acc: 0.978645, IoU: 0.957819
+Test 123, loss: 0.515908, test acc: 0.974624, test avg acc: 0.966744, IoU: 0.942473, time: 163.23 s
+Train 124, loss: 0.512578, train acc: 0.979988, train avg acc: 0.978774, IoU: 0.958120
+Test 124, loss: 0.512712, test acc: 0.979620, test avg acc: 0.974663, IoU: 0.953690, time: 163.17 s
+Train 125, loss: 0.511694, train acc: 0.981404, train avg acc: 0.980304, IoU: 0.961027
+Test 125, loss: 0.512533, test acc: 0.980180, test avg acc: 0.977018, IoU: 0.955076, time: 163.26 s
+Train 126, loss: 0.512410, train acc: 0.980305, train avg acc: 0.979159, IoU: 0.958771
+Test 126, loss: 0.514146, test acc: 0.977157, test avg acc: 0.970469, IoU: 0.948124, time: 163.37 s
+Train 127, loss: 0.512551, train acc: 0.980131, train avg acc: 0.978919, IoU: 0.958409
+Test 127, loss: 0.511846, test acc: 0.981330, test avg acc: 0.977273, IoU: 0.957532, time: 163.12 s
+Train 128, loss: 0.511984, train acc: 0.981036, train avg acc: 0.979864, IoU: 0.960264
+Test 128, loss: 0.511859, test acc: 0.981228, test avg acc: 0.978160, IoU: 0.957389, time: 163.52 s
+Train 129, loss: 0.512048, train acc: 0.980872, train avg acc: 0.979692, IoU: 0.959930
+Test 129, loss: 0.512148, test acc: 0.980928, test avg acc: 0.978014, IoU: 0.956740, time: 163.07 s
+Train 130, loss: 0.511824, train acc: 0.981191, train avg acc: 0.980090, IoU: 0.960583
+Test 130, loss: 0.512040, test acc: 0.981017, test avg acc: 0.977775, IoU: 0.956909, time: 163.46 s
+Train 131, loss: 0.511986, train acc: 0.980967, train avg acc: 0.979805, IoU: 0.960124
+Test 131, loss: 0.511855, test acc: 0.981963, test avg acc: 0.980295, IoU: 0.959117, time: 163.60 s
+Train 132, loss: 0.512291, train acc: 0.980474, train avg acc: 0.979301, IoU: 0.959115
+Test 132, loss: 0.512045, test acc: 0.981806, test avg acc: 0.979738, IoU: 0.958740, time: 163.36 s
+Train 133, loss: 0.512263, train acc: 0.980508, train avg acc: 0.979335, IoU: 0.959185
+Test 133, loss: 0.512195, test acc: 0.980862, test avg acc: 0.977199, IoU: 0.956534, time: 163.36 s
+Train 134, loss: 0.512218, train acc: 0.980547, train avg acc: 0.979372, IoU: 0.959266
+Test 134, loss: 0.512552, test acc: 0.980082, test avg acc: 0.977367, IoU: 0.954900, time: 163.25 s
+Train 135, loss: 0.511778, train acc: 0.981243, train avg acc: 0.980091, IoU: 0.960689
+Test 135, loss: 0.511571, test acc: 0.981710, test avg acc: 0.978864, IoU: 0.958469, time: 163.46 s
+Train 136, loss: 0.511970, train acc: 0.981000, train avg acc: 0.979840, IoU: 0.960189
+Test 136, loss: 0.511619, test acc: 0.981819, test avg acc: 0.978415, IoU: 0.958663, time: 163.24 s
+Train 137, loss: 0.511805, train acc: 0.981195, train avg acc: 0.980031, IoU: 0.960590
+Test 137, loss: 0.512358, test acc: 0.980595, test avg acc: 0.978379, IoU: 0.956067, time: 163.45 s
+Train 138, loss: 0.512076, train acc: 0.980844, train avg acc: 0.979656, IoU: 0.959869
+Test 138, loss: 0.511876, test acc: 0.981153, test avg acc: 0.978781, IoU: 0.957279, time: 163.34 s
+Train 139, loss: 0.511809, train acc: 0.981139, train avg acc: 0.979984, IoU: 0.960479
+Test 139, loss: 0.511589, test acc: 0.981581, test avg acc: 0.978950, IoU: 0.958200, time: 163.49 s
+Train 140, loss: 0.511861, train acc: 0.981122, train avg acc: 0.979969, IoU: 0.960445
+Test 140, loss: 0.512161, test acc: 0.980750, test avg acc: 0.976548, IoU: 0.956242, time: 163.36 s
+Train 141, loss: 0.511833, train acc: 0.981178, train avg acc: 0.980015, IoU: 0.960556
+Test 141, loss: 0.511853, test acc: 0.981186, test avg acc: 0.977833, IoU: 0.957273, time: 163.43 s
+Train 142, loss: 0.511923, train acc: 0.981123, train avg acc: 0.979999, IoU: 0.960445
+Test 142, loss: 0.511613, test acc: 0.981964, test avg acc: 0.979417, IoU: 0.959050, time: 163.33 s
+Train 143, loss: 0.511600, train acc: 0.981466, train avg acc: 0.980339, IoU: 0.961149
+Test 143, loss: 0.511367, test acc: 0.982179, test avg acc: 0.979196, IoU: 0.959491, time: 163.35 s
+Train 144, loss: 0.511926, train acc: 0.981035, train avg acc: 0.979890, IoU: 0.960267
+Test 144, loss: 0.512255, test acc: 0.981045, test avg acc: 0.978388, IoU: 0.957018, time: 163.45 s
+Train 145, loss: 0.511982, train acc: 0.980914, train avg acc: 0.979752, IoU: 0.960013
+Test 145, loss: 0.511838, test acc: 0.981627, test avg acc: 0.978302, IoU: 0.958247, time: 163.27 s
+Train 146, loss: 0.511911, train acc: 0.981040, train avg acc: 0.979836, IoU: 0.960269
+Test 146, loss: 0.514796, test acc: 0.976663, test avg acc: 0.970504, IoU: 0.947097, time: 163.70 s
+Train 147, loss: 0.511646, train acc: 0.981452, train avg acc: 0.980335, IoU: 0.961124
+Test 147, loss: 0.511536, test acc: 0.981999, test avg acc: 0.980054, IoU: 0.959176, time: 163.21 s
+Train 148, loss: 0.511412, train acc: 0.981800, train avg acc: 0.980696, IoU: 0.961832
+Test 148, loss: 0.511719, test acc: 0.981419, test avg acc: 0.978263, IoU: 0.957801, time: 163.56 s
+Train 149, loss: 0.511589, train acc: 0.981524, train avg acc: 0.980383, IoU: 0.961266
+Test 149, loss: 0.511521, test acc: 0.981970, test avg acc: 0.979217, IoU: 0.959049, time: 163.34 s
+Train 150, loss: 0.511392, train acc: 0.981804, train avg acc: 0.980686, IoU: 0.961842
+Test 150, loss: 0.512289, test acc: 0.981092, test avg acc: 0.977759, IoU: 0.957068, time: 163.50 s
+Train 151, loss: 0.511631, train acc: 0.981506, train avg acc: 0.980334, IoU: 0.961227
+Test 151, loss: 0.512102, test acc: 0.981152, test avg acc: 0.977813, IoU: 0.957199, time: 163.44 s
+Train 152, loss: 0.511669, train acc: 0.981420, train avg acc: 0.980274, IoU: 0.961054
+Test 152, loss: 0.511730, test acc: 0.981534, test avg acc: 0.977523, IoU: 0.957986, time: 163.38 s
+Train 153, loss: 0.511300, train acc: 0.981965, train avg acc: 0.980875, IoU: 0.962174
+Test 153, loss: 0.511492, test acc: 0.981863, test avg acc: 0.978253, IoU: 0.958744, time: 163.44 s
+Train 154, loss: 0.511722, train acc: 0.981242, train avg acc: 0.980071, IoU: 0.960682
+Test 154, loss: 0.511355, test acc: 0.982628, test avg acc: 0.980148, IoU: 0.960522, time: 163.32 s
+Train 155, loss: 0.511351, train acc: 0.981879, train avg acc: 0.980739, IoU: 0.961993
+Test 155, loss: 0.512091, test acc: 0.980671, test avg acc: 0.975459, IoU: 0.955982, time: 163.55 s
+Train 156, loss: 0.511264, train acc: 0.982005, train avg acc: 0.980909, IoU: 0.962257
+Test 156, loss: 0.511745, test acc: 0.981362, test avg acc: 0.980261, IoU: 0.957840, time: 163.30 s
+Train 157, loss: 0.511296, train acc: 0.981965, train avg acc: 0.980823, IoU: 0.962170
+Test 157, loss: 0.511217, test acc: 0.982381, test avg acc: 0.980863, IoU: 0.960049, time: 163.57 s
+Train 158, loss: 0.511462, train acc: 0.981635, train avg acc: 0.980494, IoU: 0.961495
+Test 158, loss: 0.511034, test acc: 0.982619, test avg acc: 0.980219, IoU: 0.960509, time: 163.33 s
+Train 159, loss: 0.511089, train acc: 0.982325, train avg acc: 0.981254, IoU: 0.962912
+Test 159, loss: 0.511261, test acc: 0.982155, test avg acc: 0.978845, IoU: 0.959413, time: 163.68 s
+Train 160, loss: 0.511314, train acc: 0.981919, train avg acc: 0.980781, IoU: 0.962078
+Test 160, loss: 0.511586, test acc: 0.981638, test avg acc: 0.978998, IoU: 0.958325, time: 163.30 s
+Train 161, loss: 0.511524, train acc: 0.981603, train avg acc: 0.980443, IoU: 0.961428
+Test 161, loss: 0.511254, test acc: 0.982226, test avg acc: 0.979501, IoU: 0.959616, time: 163.62 s
+Train 162, loss: 0.511207, train acc: 0.982115, train avg acc: 0.980979, IoU: 0.962478
+Test 162, loss: 0.511629, test acc: 0.981607, test avg acc: 0.978022, IoU: 0.958181, time: 163.29 s
+Train 163, loss: 0.511334, train acc: 0.981896, train avg acc: 0.980759, IoU: 0.962029
+Test 163, loss: 0.511603, test acc: 0.981965, test avg acc: 0.978848, IoU: 0.959010, time: 163.60 s
+Train 164, loss: 0.511274, train acc: 0.981963, train avg acc: 0.980835, IoU: 0.962168
+Test 164, loss: 0.511439, test acc: 0.982087, test avg acc: 0.978945, IoU: 0.959276, time: 163.24 s
+Train 165, loss: 0.511398, train acc: 0.981776, train avg acc: 0.980624, IoU: 0.961782
+Test 165, loss: 0.512098, test acc: 0.980849, test avg acc: 0.976507, IoU: 0.956447, time: 163.45 s
+Train 166, loss: 0.511211, train acc: 0.982055, train avg acc: 0.980918, IoU: 0.962353
+Test 166, loss: 0.511398, test acc: 0.982104, test avg acc: 0.978137, IoU: 0.959250, time: 163.49 s
+Train 167, loss: 0.511116, train acc: 0.982221, train avg acc: 0.981092, IoU: 0.962695
+Test 167, loss: 0.512016, test acc: 0.981110, test avg acc: 0.978291, IoU: 0.957149, time: 163.32 s
+Train 168, loss: 0.511639, train acc: 0.981468, train avg acc: 0.980294, IoU: 0.961149
+Test 168, loss: 0.514221, test acc: 0.977833, test avg acc: 0.975459, IoU: 0.950018, time: 163.50 s
+Train 169, loss: 0.511301, train acc: 0.981942, train avg acc: 0.980846, IoU: 0.962127
+Test 169, loss: 0.511933, test acc: 0.981029, test avg acc: 0.977523, IoU: 0.956915, time: 163.33 s
+Train 170, loss: 0.510940, train acc: 0.982536, train avg acc: 0.981429, IoU: 0.963344
+Test 170, loss: 0.511338, test acc: 0.982064, test avg acc: 0.978824, IoU: 0.959218, time: 163.67 s
+Train 171, loss: 0.510893, train acc: 0.982598, train avg acc: 0.981505, IoU: 0.963469
+Test 171, loss: 0.511425, test acc: 0.981987, test avg acc: 0.980227, IoU: 0.959163, time: 163.28 s
+Train 172, loss: 0.510920, train acc: 0.982509, train avg acc: 0.981366, IoU: 0.963285
+Test 172, loss: 0.510964, test acc: 0.982794, test avg acc: 0.980718, IoU: 0.960919, time: 164.07 s
+Train 173, loss: 0.510774, train acc: 0.982707, train avg acc: 0.981629, IoU: 0.963694
+Test 173, loss: 0.511958, test acc: 0.981545, test avg acc: 0.979334, IoU: 0.958155, time: 163.29 s
+Train 174, loss: 0.510772, train acc: 0.982783, train avg acc: 0.981695, IoU: 0.963849
+Test 174, loss: 0.510943, test acc: 0.982985, test avg acc: 0.980722, IoU: 0.961328, time: 163.62 s
+Train 175, loss: 0.510987, train acc: 0.982431, train avg acc: 0.981342, IoU: 0.963131
+Test 175, loss: 0.511068, test acc: 0.982547, test avg acc: 0.979678, IoU: 0.960314, time: 163.36 s
+Train 176, loss: 0.510968, train acc: 0.982433, train avg acc: 0.981304, IoU: 0.963128
+Test 176, loss: 0.511153, test acc: 0.982561, test avg acc: 0.979898, IoU: 0.960360, time: 163.43 s
+Train 177, loss: 0.510912, train acc: 0.982576, train avg acc: 0.981446, IoU: 0.963422
+Test 177, loss: 0.511517, test acc: 0.982367, test avg acc: 0.978639, IoU: 0.959850, time: 163.48 s
+Train 178, loss: 0.510837, train acc: 0.982641, train avg acc: 0.981509, IoU: 0.963556
+Test 178, loss: 0.510921, test acc: 0.982886, test avg acc: 0.980325, IoU: 0.961086, time: 163.48 s
+Train 179, loss: 0.510662, train acc: 0.982931, train avg acc: 0.981847, IoU: 0.964157
+Test 179, loss: 0.511346, test acc: 0.982320, test avg acc: 0.979220, IoU: 0.959794, time: 163.46 s
+Train 180, loss: 0.510842, train acc: 0.982628, train avg acc: 0.981518, IoU: 0.963529
+Test 180, loss: 0.511872, test acc: 0.981318, test avg acc: 0.979010, IoU: 0.957648, time: 163.35 s
+Train 181, loss: 0.510761, train acc: 0.982767, train avg acc: 0.981690, IoU: 0.963820
+Test 181, loss: 0.511456, test acc: 0.982358, test avg acc: 0.981427, IoU: 0.960044, time: 163.52 s
+Train 182, loss: 0.510718, train acc: 0.982884, train avg acc: 0.981787, IoU: 0.964060
+Test 182, loss: 0.511548, test acc: 0.981918, test avg acc: 0.978689, IoU: 0.958897, time: 163.29 s
+Train 183, loss: 0.510481, train acc: 0.983236, train avg acc: 0.982168, IoU: 0.964785
+Test 183, loss: 0.511295, test acc: 0.982262, test avg acc: 0.979522, IoU: 0.959694, time: 163.54 s
+Train 184, loss: 0.510472, train acc: 0.983258, train avg acc: 0.982180, IoU: 0.964827
+Test 184, loss: 0.510884, test acc: 0.982840, test avg acc: 0.980011, IoU: 0.960964, time: 163.46 s
+Train 185, loss: 0.510487, train acc: 0.983216, train avg acc: 0.982131, IoU: 0.964742
+Test 185, loss: 0.511374, test acc: 0.982090, test avg acc: 0.978774, IoU: 0.959269, time: 163.71 s
+Train 186, loss: 0.510391, train acc: 0.983355, train avg acc: 0.982289, IoU: 0.965030
+Test 186, loss: 0.511112, test acc: 0.982312, test avg acc: 0.978728, IoU: 0.959738, time: 163.58 s
+Train 187, loss: 0.510509, train acc: 0.983134, train avg acc: 0.982071, IoU: 0.964572
+Test 187, loss: 0.511781, test acc: 0.981312, test avg acc: 0.978877, IoU: 0.957624, time: 163.28 s
+Train 188, loss: 0.510447, train acc: 0.983248, train avg acc: 0.982170, IoU: 0.964807
+Test 188, loss: 0.511248, test acc: 0.982071, test avg acc: 0.979807, IoU: 0.959310, time: 163.60 s
+Train 189, loss: 0.510378, train acc: 0.983384, train avg acc: 0.982304, IoU: 0.965089
+Test 189, loss: 0.511118, test acc: 0.982395, test avg acc: 0.979910, IoU: 0.960007, time: 163.27 s
+Train 190, loss: 0.510352, train acc: 0.983473, train avg acc: 0.982419, IoU: 0.965276
+Test 190, loss: 0.510838, test acc: 0.982948, test avg acc: 0.980108, IoU: 0.961202, time: 163.63 s
+Train 191, loss: 0.510208, train acc: 0.983669, train avg acc: 0.982594, IoU: 0.965676
+Test 191, loss: 0.511239, test acc: 0.982390, test avg acc: 0.980425, IoU: 0.960037, time: 163.27 s
+Train 192, loss: 0.510439, train acc: 0.983247, train avg acc: 0.982150, IoU: 0.964806
+Test 192, loss: 0.510806, test acc: 0.982622, test avg acc: 0.979133, IoU: 0.960432, time: 163.77 s
+Train 193, loss: 0.510404, train acc: 0.983358, train avg acc: 0.982262, IoU: 0.965032
+Test 193, loss: 0.510870, test acc: 0.982679, test avg acc: 0.979325, IoU: 0.960569, time: 163.33 s
+Train 194, loss: 0.510089, train acc: 0.983863, train avg acc: 0.982795, IoU: 0.966075
+Test 194, loss: 0.510835, test acc: 0.982792, test avg acc: 0.979837, IoU: 0.960850, time: 163.50 s
+Train 195, loss: 0.510038, train acc: 0.983916, train avg acc: 0.982835, IoU: 0.966182
+Test 195, loss: 0.511137, test acc: 0.982188, test avg acc: 0.978542, IoU: 0.959460, time: 163.28 s
+Train 196, loss: 0.510101, train acc: 0.983786, train avg acc: 0.982725, IoU: 0.965916
+Test 196, loss: 0.511008, test acc: 0.982486, test avg acc: 0.979555, IoU: 0.960173, time: 163.68 s
+Train 197, loss: 0.510251, train acc: 0.983595, train avg acc: 0.982493, IoU: 0.965521
+Test 197, loss: 0.510965, test acc: 0.982562, test avg acc: 0.980243, IoU: 0.960388, time: 163.44 s
+Train 198, loss: 0.510037, train acc: 0.983887, train avg acc: 0.982815, IoU: 0.966124
+Test 198, loss: 0.511349, test acc: 0.982247, test avg acc: 0.980105, IoU: 0.959706, time: 163.53 s
+Train 199, loss: 0.510064, train acc: 0.983939, train avg acc: 0.982902, IoU: 0.966232
+Test 199, loss: 0.510745, test acc: 0.982986, test avg acc: 0.979786, IoU: 0.961259, time: 163.44 s
+Train 200, loss: 0.510177, train acc: 0.983675, train avg acc: 0.982596, IoU: 0.965683
+Test 200, loss: 0.511004, test acc: 0.982584, test avg acc: 0.979172, IoU: 0.960354, time: 163.37 s
+Train 201, loss: 0.510103, train acc: 0.983796, train avg acc: 0.982718, IoU: 0.965936
+Test 201, loss: 0.511531, test acc: 0.981536, test avg acc: 0.978083, IoU: 0.958036, time: 163.49 s
+Train 202, loss: 0.510094, train acc: 0.983824, train avg acc: 0.982764, IoU: 0.965996
+Test 202, loss: 0.510929, test acc: 0.982539, test avg acc: 0.979010, IoU: 0.960246, time: 163.27 s
+Train 203, loss: 0.510039, train acc: 0.983938, train avg acc: 0.982862, IoU: 0.966227
+Test 203, loss: 0.510955, test acc: 0.982600, test avg acc: 0.980099, IoU: 0.960458, time: 163.59 s
+Train 204, loss: 0.509905, train acc: 0.984143, train avg acc: 0.983093, IoU: 0.966652
+Test 204, loss: 0.510906, test acc: 0.982716, test avg acc: 0.979396, IoU: 0.960653, time: 163.37 s
+Train 205, loss: 0.509985, train acc: 0.983997, train avg acc: 0.982917, IoU: 0.966348
+Test 205, loss: 0.511008, test acc: 0.982830, test avg acc: 0.979646, IoU: 0.960916, time: 163.55 s
+Train 206, loss: 0.509810, train acc: 0.984270, train avg acc: 0.983212, IoU: 0.966913
+Test 206, loss: 0.511556, test acc: 0.981603, test avg acc: 0.977996, IoU: 0.958172, time: 163.29 s
+Train 207, loss: 0.509855, train acc: 0.984226, train avg acc: 0.983151, IoU: 0.966821
+Test 207, loss: 0.511217, test acc: 0.982260, test avg acc: 0.979381, IoU: 0.959678, time: 163.74 s
+Train 208, loss: 0.509763, train acc: 0.984341, train avg acc: 0.983267, IoU: 0.967059
+Test 208, loss: 0.510782, test acc: 0.982715, test avg acc: 0.979104, IoU: 0.960629, time: 163.44 s
+Train 209, loss: 0.509790, train acc: 0.984302, train avg acc: 0.983231, IoU: 0.966981
+Test 209, loss: 0.510915, test acc: 0.982796, test avg acc: 0.979842, IoU: 0.960857, time: 163.28 s
+Train 210, loss: 0.509799, train acc: 0.984298, train avg acc: 0.983241, IoU: 0.966977
+Test 210, loss: 0.511017, test acc: 0.982469, test avg acc: 0.979522, IoU: 0.960136, time: 163.45 s
+Train 211, loss: 0.509721, train acc: 0.984390, train avg acc: 0.983334, IoU: 0.967160
+Test 211, loss: 0.510787, test acc: 0.982852, test avg acc: 0.978837, IoU: 0.960901, time: 163.48 s
+Train 212, loss: 0.509654, train acc: 0.984549, train avg acc: 0.983489, IoU: 0.967489
+Test 212, loss: 0.510746, test acc: 0.982828, test avg acc: 0.979358, IoU: 0.960890, time: 163.62 s
+Train 213, loss: 0.509611, train acc: 0.984610, train avg acc: 0.983563, IoU: 0.967618
+Test 213, loss: 0.510770, test acc: 0.982947, test avg acc: 0.979614, IoU: 0.961163, time: 163.29 s
+Train 214, loss: 0.509633, train acc: 0.984603, train avg acc: 0.983540, IoU: 0.967601
+Test 214, loss: 0.510962, test acc: 0.982716, test avg acc: 0.980153, IoU: 0.960710, time: 163.56 s
+Train 215, loss: 0.509629, train acc: 0.984523, train avg acc: 0.983466, IoU: 0.967438
+Test 215, loss: 0.510814, test acc: 0.982984, test avg acc: 0.980853, IoU: 0.961335, time: 163.30 s
+Train 216, loss: 0.509525, train acc: 0.984759, train avg acc: 0.983706, IoU: 0.967925
+Test 216, loss: 0.510848, test acc: 0.982823, test avg acc: 0.979738, IoU: 0.960908, time: 163.97 s
+Train 217, loss: 0.509570, train acc: 0.984692, train avg acc: 0.983620, IoU: 0.967782
+Test 217, loss: 0.510814, test acc: 0.982876, test avg acc: 0.979592, IoU: 0.961010, time: 163.68 s
+Train 218, loss: 0.509459, train acc: 0.984828, train avg acc: 0.983768, IoU: 0.968068
+Test 218, loss: 0.510568, test acc: 0.983251, test avg acc: 0.980286, IoU: 0.961864, time: 163.66 s
+Train 219, loss: 0.509452, train acc: 0.984851, train avg acc: 0.983806, IoU: 0.968115
+Test 219, loss: 0.510787, test acc: 0.982919, test avg acc: 0.980232, IoU: 0.961149, time: 163.36 s
+Train 220, loss: 0.509424, train acc: 0.984921, train avg acc: 0.983864, IoU: 0.968260
+Test 220, loss: 0.511131, test acc: 0.982438, test avg acc: 0.980213, IoU: 0.960122, time: 163.44 s
+Train 221, loss: 0.509504, train acc: 0.984781, train avg acc: 0.983719, IoU: 0.967970
+Test 221, loss: 0.510708, test acc: 0.983014, test avg acc: 0.979867, IoU: 0.961326, time: 163.48 s
+Train 222, loss: 0.509415, train acc: 0.984967, train avg acc: 0.983917, IoU: 0.968352
+Test 222, loss: 0.511075, test acc: 0.982518, test avg acc: 0.979603, IoU: 0.960245, time: 163.41 s
+Train 223, loss: 0.509426, train acc: 0.984902, train avg acc: 0.983859, IoU: 0.968221
+Test 223, loss: 0.510715, test acc: 0.983133, test avg acc: 0.980329, IoU: 0.961615, time: 163.61 s
+Train 224, loss: 0.509360, train acc: 0.985008, train avg acc: 0.983976, IoU: 0.968440
+Test 224, loss: 0.510663, test acc: 0.983084, test avg acc: 0.980348, IoU: 0.961510, time: 163.25 s
+Train 225, loss: 0.509374, train acc: 0.984979, train avg acc: 0.983934, IoU: 0.968379
+Test 225, loss: 0.510773, test acc: 0.982982, test avg acc: 0.980267, IoU: 0.961287, time: 163.53 s
+Train 226, loss: 0.509272, train acc: 0.985145, train avg acc: 0.984103, IoU: 0.968722
+Test 226, loss: 0.510795, test acc: 0.982882, test avg acc: 0.979871, IoU: 0.961045, time: 163.40 s
+Train 227, loss: 0.509272, train acc: 0.985124, train avg acc: 0.984064, IoU: 0.968675
+Test 227, loss: 0.510675, test acc: 0.983054, test avg acc: 0.980946, IoU: 0.961491, time: 163.64 s
+Train 228, loss: 0.509245, train acc: 0.985184, train avg acc: 0.984129, IoU: 0.968800
+Test 228, loss: 0.510783, test acc: 0.982880, test avg acc: 0.979730, IoU: 0.961028, time: 163.30 s
+Train 229, loss: 0.509238, train acc: 0.985167, train avg acc: 0.984106, IoU: 0.968767
+Test 229, loss: 0.510938, test acc: 0.982582, test avg acc: 0.979610, IoU: 0.960382, time: 163.63 s
+Train 230, loss: 0.509192, train acc: 0.985256, train avg acc: 0.984207, IoU: 0.968947
+Test 230, loss: 0.510603, test acc: 0.983183, test avg acc: 0.980098, IoU: 0.961704, time: 163.23 s
+Train 231, loss: 0.509187, train acc: 0.985307, train avg acc: 0.984250, IoU: 0.969054
+Test 231, loss: 0.510822, test acc: 0.982737, test avg acc: 0.980040, IoU: 0.960746, time: 163.28 s
+Train 232, loss: 0.509192, train acc: 0.985301, train avg acc: 0.984236, IoU: 0.969042
+Test 232, loss: 0.510876, test acc: 0.982763, test avg acc: 0.979522, IoU: 0.960763, time: 163.86 s
+Train 233, loss: 0.509124, train acc: 0.985350, train avg acc: 0.984310, IoU: 0.969147
+Test 233, loss: 0.510784, test acc: 0.982864, test avg acc: 0.979775, IoU: 0.960998, time: 163.34 s
+Train 234, loss: 0.509157, train acc: 0.985316, train avg acc: 0.984264, IoU: 0.969073
+Test 234, loss: 0.510593, test acc: 0.983317, test avg acc: 0.981022, IoU: 0.962059, time: 163.45 s
+Train 235, loss: 0.509089, train acc: 0.985430, train avg acc: 0.984398, IoU: 0.969309
+Test 235, loss: 0.510710, test acc: 0.983014, test avg acc: 0.980033, IoU: 0.961338, time: 163.18 s
+Train 236, loss: 0.509066, train acc: 0.985483, train avg acc: 0.984431, IoU: 0.969419
+Test 236, loss: 0.510752, test acc: 0.982979, test avg acc: 0.980296, IoU: 0.961283, time: 163.54 s
+Train 237, loss: 0.509104, train acc: 0.985427, train avg acc: 0.984368, IoU: 0.969307
+Test 237, loss: 0.510811, test acc: 0.982693, test avg acc: 0.978878, IoU: 0.960564, time: 163.35 s
+Train 238, loss: 0.509052, train acc: 0.985488, train avg acc: 0.984437, IoU: 0.969428
+Test 238, loss: 0.510777, test acc: 0.982920, test avg acc: 0.979799, IoU: 0.961120, time: 163.59 s
+Train 239, loss: 0.509040, train acc: 0.985532, train avg acc: 0.984492, IoU: 0.969521
+Test 239, loss: 0.510821, test acc: 0.982837, test avg acc: 0.979833, IoU: 0.960945, time: 163.36 s
+Train 240, loss: 0.509046, train acc: 0.985488, train avg acc: 0.984441, IoU: 0.969431
+Test 240, loss: 0.510666, test acc: 0.983130, test avg acc: 0.980284, IoU: 0.961604, time: 163.59 s
+Train 241, loss: 0.509001, train acc: 0.985582, train avg acc: 0.984524, IoU: 0.969624
+Test 241, loss: 0.510560, test acc: 0.983253, test avg acc: 0.980107, IoU: 0.961856, time: 163.45 s
+Train 242, loss: 0.508992, train acc: 0.985595, train avg acc: 0.984555, IoU: 0.969653
+Test 242, loss: 0.510758, test acc: 0.982997, test avg acc: 0.980053, IoU: 0.961304, time: 163.39 s
+Train 243, loss: 0.509007, train acc: 0.985600, train avg acc: 0.984544, IoU: 0.969660
+Test 243, loss: 0.510666, test acc: 0.983039, test avg acc: 0.979954, IoU: 0.961385, time: 163.45 s
+Train 244, loss: 0.508965, train acc: 0.985612, train avg acc: 0.984586, IoU: 0.969688
+Test 244, loss: 0.510722, test acc: 0.982947, test avg acc: 0.979674, IoU: 0.961168, time: 163.42 s
+Train 245, loss: 0.509025, train acc: 0.985569, train avg acc: 0.984522, IoU: 0.969599
+Test 245, loss: 0.510706, test acc: 0.982994, test avg acc: 0.979930, IoU: 0.961289, time: 163.62 s
+Train 246, loss: 0.508944, train acc: 0.985651, train avg acc: 0.984615, IoU: 0.969767
+Test 246, loss: 0.510806, test acc: 0.982900, test avg acc: 0.979901, IoU: 0.961085, time: 163.40 s
+Train 247, loss: 0.508948, train acc: 0.985697, train avg acc: 0.984655, IoU: 0.969862
+Test 247, loss: 0.510851, test acc: 0.982825, test avg acc: 0.979922, IoU: 0.960925, time: 163.56 s
+Train 248, loss: 0.508951, train acc: 0.985661, train avg acc: 0.984610, IoU: 0.969784
+Test 248, loss: 0.510657, test acc: 0.983143, test avg acc: 0.979842, IoU: 0.961601, time: 163.41 s
+Train 249, loss: 0.508987, train acc: 0.985641, train avg acc: 0.984609, IoU: 0.969748
+Test 249, loss: 0.510723, test acc: 0.982960, test avg acc: 0.980082, IoU: 0.961227, time: 163.70 s
+Namespace(exp_name='test_my_data_1', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='pytorch/checkpoints/test_my_data_1/models/model.t7', predict=True, predict_path='pytorch/dataset/test_set')
+Using GPU : 0 from 1 devices
+Processing file: pytorch/dataset/test_set/24040209-M1/K01-06.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K01-07.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K01-10.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K01-11.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K01-12.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K04-01.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K05-03.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K05-08.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K05-10.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K06-01.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K06-03.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K08-02.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K08-03.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K10-02.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K10-16.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K12-14.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K15-20.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K16-08.txt
+Processing file: pytorch/dataset/test_set/24040209-M1/K17-02.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-04.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-05.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-12.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-16.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-17.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-19.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K01-20.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K02-05.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K02-12.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K04-15.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K05-01.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K05-05.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K05-07.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K06-03.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K07-01.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K07-09.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K08-02.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K08-10.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K09-16.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K11-03.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K12-01.txt
+Processing file: pytorch/dataset/test_set/2431209-M1/K13-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K02-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K02-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K03-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K03-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K03-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K03-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K04-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K04-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K04-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K05-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K05-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K05-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K06-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K06-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K06-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K06-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K06-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K06-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K07-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K07-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K07-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K07-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K07-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K08-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K10-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K11-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K12-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K12-12.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K13-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K14-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K14-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K14-11.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K14-14.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K15-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K15-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K15-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K15-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020211-M1/K15-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K01-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K02-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K02-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K04-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K05-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K05-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K05-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K05-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K06-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K07-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K10-11.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K11-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K11-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K12-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K12-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K12-11.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K13-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K13-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K14-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K14-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K14-14.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K14-15.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020212-M1/K15-11.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K02-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K02-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K02-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K03-11.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K04-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K04-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K05-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K05-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K05-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K06-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K07-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K07-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K07-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K07-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K07-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K08-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K08-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K09-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K09-12.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K10-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K10-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K10-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K10-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K11-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K12-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K13-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K13-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K13-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K14-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-01.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-02.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-03.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-04.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-05.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-06.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-07.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-08.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-09.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-10.txt
+Processing file: pytorch/dataset/test_set/JA1ES24020211-M1/JA1ES24020607-M2/K15-11.txt
+已保存txt结果至: pytorch/result/partseg1/text
+已保存可视化图片至: pytorch/result/partseg1/image

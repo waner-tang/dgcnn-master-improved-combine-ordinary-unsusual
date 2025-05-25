@@ -1,0 +1,19 @@
+tensorflow/
+
+# 数据文件夹
+data/
+pytorch/dataset/
+
+# 结果和输出文件
+pytorch/result/
+
+# Python缓存和编译文件
+pytorch/__pycache__/
+
+# IDE配置文件
+.vscode/
+.idea/
+
+# Jupyter Notebook
+pytorch/.ipynb_checkpoints/
+.ipynb_checkpoints/
