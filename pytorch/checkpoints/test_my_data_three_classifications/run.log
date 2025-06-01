@@ -1,0 +1,505 @@
+Namespace(exp_name='test_my_data_three_classifications', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='pytorch/checkpoints/test_my_data_three_classifications/models/model.t7', predict=True, predict_path='pytorch/dataset/test_set')
+Using GPU : 0 from 1 devices
+Processing file: pytorch/dataset/test_set/24040209-M1/K01-06.txt
+Namespace(exp_name='test_my_data_three_classifications', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='', predict=False, predict_path='')
+Using GPU : 0 from 1 devices
+Train 0, loss: 0.762228, train acc: 0.933171, train avg acc: 0.881596, IoU: 0.800492
+Test 0, loss: 0.686214, test acc: 0.961420, test avg acc: 0.933843, IoU: 0.880946, time: 116.09 s
+Train 1, loss: 0.694232, train acc: 0.955559, train avg acc: 0.915397, IoU: 0.859626
+Test 1, loss: 0.680369, test acc: 0.962485, test avg acc: 0.936846, IoU: 0.885947, time: 115.31 s
+Train 2, loss: 0.686821, train acc: 0.958771, train avg acc: 0.920968, IoU: 0.868387
+Test 2, loss: 0.678362, test acc: 0.964653, test avg acc: 0.928943, IoU: 0.889547, time: 114.36 s
+Train 3, loss: 0.681580, train acc: 0.961053, train avg acc: 0.924813, IoU: 0.874903
+Test 3, loss: 0.675009, test acc: 0.964791, test avg acc: 0.943875, IoU: 0.890750, time: 114.68 s
+Train 4, loss: 0.679875, train acc: 0.961784, train avg acc: 0.925549, IoU: 0.875459
+Test 4, loss: 0.672336, test acc: 0.967987, test avg acc: 0.940017, IoU: 0.903158, time: 115.55 s
+Train 5, loss: 0.677946, train acc: 0.963041, train avg acc: 0.928941, IoU: 0.881413
+Test 5, loss: 0.673556, test acc: 0.967333, test avg acc: 0.948170, IoU: 0.903216, time: 114.29 s
+Train 6, loss: 0.677551, train acc: 0.963048, train avg acc: 0.928677, IoU: 0.879957
+Test 6, loss: 0.673769, test acc: 0.966790, test avg acc: 0.948890, IoU: 0.899845, time: 114.43 s
+Train 7, loss: 0.675508, train acc: 0.964507, train avg acc: 0.932411, IoU: 0.885792
+Test 7, loss: 0.671652, test acc: 0.968787, test avg acc: 0.938146, IoU: 0.904379, time: 115.50 s
+Train 8, loss: 0.675971, train acc: 0.964104, train avg acc: 0.931331, IoU: 0.883800
+Test 8, loss: 0.672090, test acc: 0.968205, test avg acc: 0.945673, IoU: 0.906160, time: 114.08 s
+Train 9, loss: 0.675594, train acc: 0.964565, train avg acc: 0.933096, IoU: 0.886526
+Test 9, loss: 0.674068, test acc: 0.965834, test avg acc: 0.938649, IoU: 0.900730, time: 115.61 s
+Train 10, loss: 0.674841, train acc: 0.964912, train avg acc: 0.933724, IoU: 0.887271
+Test 10, loss: 0.669877, test acc: 0.968941, test avg acc: 0.944746, IoU: 0.907706, time: 114.52 s
+Train 11, loss: 0.674040, train acc: 0.965748, train avg acc: 0.935332, IoU: 0.890239
+Test 11, loss: 0.674951, test acc: 0.965990, test avg acc: 0.956347, IoU: 0.898108, time: 115.50 s
+Train 12, loss: 0.674144, train acc: 0.965491, train avg acc: 0.934492, IoU: 0.888954
+Test 12, loss: 0.670273, test acc: 0.968872, test avg acc: 0.944296, IoU: 0.905246, time: 114.36 s
+Train 13, loss: 0.672943, train acc: 0.966649, train avg acc: 0.938087, IoU: 0.893885
+Test 13, loss: 0.674210, test acc: 0.965067, test avg acc: 0.952929, IoU: 0.894525, time: 114.56 s
+Train 14, loss: 0.673773, train acc: 0.965775, train avg acc: 0.936214, IoU: 0.890825
+Test 14, loss: 0.674824, test acc: 0.965464, test avg acc: 0.924418, IoU: 0.890626, time: 115.56 s
+Train 15, loss: 0.673105, train acc: 0.966398, train avg acc: 0.937212, IoU: 0.893016
+Test 15, loss: 0.673456, test acc: 0.966766, test avg acc: 0.942866, IoU: 0.904201, time: 114.39 s
+Train 16, loss: 0.672992, train acc: 0.966589, train avg acc: 0.938449, IoU: 0.894598
+Test 16, loss: 0.676945, test acc: 0.961548, test avg acc: 0.923087, IoU: 0.889070, time: 115.36 s
+Train 17, loss: 0.673135, train acc: 0.966456, train avg acc: 0.937377, IoU: 0.893063
+Test 17, loss: 0.672864, test acc: 0.967190, test avg acc: 0.936430, IoU: 0.900632, time: 114.53 s
+Train 18, loss: 0.672943, train acc: 0.966640, train avg acc: 0.936635, IoU: 0.892563
+Test 18, loss: 0.669928, test acc: 0.969027, test avg acc: 0.950285, IoU: 0.907051, time: 115.47 s
+Train 19, loss: 0.672212, train acc: 0.967262, train avg acc: 0.939304, IoU: 0.895975
+Test 19, loss: 0.671178, test acc: 0.968870, test avg acc: 0.949088, IoU: 0.908569, time: 114.63 s
+Train 20, loss: 0.672353, train acc: 0.967001, train avg acc: 0.938172, IoU: 0.894718
+Test 20, loss: 0.670377, test acc: 0.968993, test avg acc: 0.956205, IoU: 0.909172, time: 114.50 s
+Train 21, loss: 0.672357, train acc: 0.967118, train avg acc: 0.939255, IoU: 0.896011
+Test 21, loss: 0.670213, test acc: 0.969431, test avg acc: 0.942820, IoU: 0.907584, time: 115.18 s
+Train 22, loss: 0.672654, train acc: 0.966894, train avg acc: 0.938624, IoU: 0.894745
+Test 22, loss: 0.673193, test acc: 0.968188, test avg acc: 0.956464, IoU: 0.906266, time: 114.57 s
+Train 23, loss: 0.672575, train acc: 0.966798, train avg acc: 0.938003, IoU: 0.893578
+Test 23, loss: 0.673636, test acc: 0.965230, test avg acc: 0.955678, IoU: 0.892600, time: 115.71 s
+Train 24, loss: 0.673389, train acc: 0.966047, train avg acc: 0.936140, IoU: 0.891757
+Test 24, loss: 0.671110, test acc: 0.969016, test avg acc: 0.948383, IoU: 0.910667, time: 114.63 s
+Train 25, loss: 0.672308, train acc: 0.967112, train avg acc: 0.938357, IoU: 0.895178
+Test 25, loss: 0.673791, test acc: 0.965106, test avg acc: 0.947787, IoU: 0.900039, time: 114.62 s
+Train 26, loss: 0.673080, train acc: 0.966420, train avg acc: 0.937264, IoU: 0.893106
+Test 26, loss: 0.671225, test acc: 0.968777, test avg acc: 0.953457, IoU: 0.907542, time: 115.90 s
+Train 27, loss: 0.671451, train acc: 0.967808, train avg acc: 0.939974, IoU: 0.897546
+Test 27, loss: 0.669761, test acc: 0.969246, test avg acc: 0.956577, IoU: 0.908593, time: 114.52 s
+Train 28, loss: 0.672990, train acc: 0.966450, train avg acc: 0.936552, IoU: 0.892121
+Test 28, loss: 0.674322, test acc: 0.965505, test avg acc: 0.952093, IoU: 0.892352, time: 114.37 s
+Train 29, loss: 0.672271, train acc: 0.967285, train avg acc: 0.939533, IoU: 0.896749
+Test 29, loss: 0.670753, test acc: 0.968085, test avg acc: 0.954810, IoU: 0.905778, time: 115.66 s
+Train 30, loss: 0.672069, train acc: 0.967222, train avg acc: 0.939319, IoU: 0.896200
+Test 30, loss: 0.674688, test acc: 0.965647, test avg acc: 0.948306, IoU: 0.902771, time: 114.54 s
+Train 31, loss: 0.671783, train acc: 0.967641, train avg acc: 0.939899, IoU: 0.897352
+Test 31, loss: 0.669603, test acc: 0.970128, test avg acc: 0.946966, IoU: 0.912149, time: 115.41 s
+Train 32, loss: 0.672027, train acc: 0.967431, train avg acc: 0.939113, IoU: 0.895801
+Test 32, loss: 0.671375, test acc: 0.967671, test avg acc: 0.936720, IoU: 0.901082, time: 114.65 s
+Train 33, loss: 0.672007, train acc: 0.967396, train avg acc: 0.939890, IoU: 0.897083
+Test 33, loss: 0.671491, test acc: 0.968863, test avg acc: 0.948389, IoU: 0.908663, time: 114.71 s
+Train 34, loss: 0.671827, train acc: 0.967504, train avg acc: 0.939552, IoU: 0.896685
+Test 34, loss: 0.671132, test acc: 0.969248, test avg acc: 0.946665, IoU: 0.910353, time: 115.58 s
+Train 35, loss: 0.671630, train acc: 0.967587, train avg acc: 0.940405, IoU: 0.897524
+Test 35, loss: 0.674282, test acc: 0.966598, test avg acc: 0.950924, IoU: 0.909119, time: 114.40 s
+Train 36, loss: 0.671322, train acc: 0.968087, train avg acc: 0.940970, IoU: 0.898965
+Test 36, loss: 0.677096, test acc: 0.965608, test avg acc: 0.959428, IoU: 0.898703, time: 115.71 s
+Train 37, loss: 0.671319, train acc: 0.967873, train avg acc: 0.940698, IoU: 0.898197
+Test 37, loss: 0.668802, test acc: 0.969907, test avg acc: 0.946189, IoU: 0.909321, time: 114.42 s
+Train 38, loss: 0.670994, train acc: 0.968356, train avg acc: 0.941679, IoU: 0.900116
+Test 38, loss: 0.691072, test acc: 0.951898, test avg acc: 0.951251, IoU: 0.881457, time: 114.49 s
+Train 39, loss: 0.671288, train acc: 0.967906, train avg acc: 0.940560, IoU: 0.898018
+Test 39, loss: 0.667697, test acc: 0.971116, test avg acc: 0.950361, IoU: 0.915030, time: 116.03 s
+Train 40, loss: 0.670629, train acc: 0.968605, train avg acc: 0.942181, IoU: 0.900752
+Test 40, loss: 0.669564, test acc: 0.969054, test avg acc: 0.939480, IoU: 0.905058, time: 114.62 s
+Train 41, loss: 0.672104, train acc: 0.967228, train avg acc: 0.939553, IoU: 0.897006
+Test 41, loss: 0.671184, test acc: 0.968324, test avg acc: 0.948926, IoU: 0.909145, time: 114.58 s
+Train 42, loss: 0.671166, train acc: 0.967994, train avg acc: 0.941411, IoU: 0.899478
+Test 42, loss: 0.670983, test acc: 0.969249, test avg acc: 0.958696, IoU: 0.909311, time: 115.91 s
+Train 43, loss: 0.671971, train acc: 0.967420, train avg acc: 0.939602, IoU: 0.896635
+Test 43, loss: 0.669537, test acc: 0.969884, test avg acc: 0.953058, IoU: 0.910845, time: 114.44 s
+Train 44, loss: 0.671395, train acc: 0.967969, train avg acc: 0.940524, IoU: 0.898030
+Test 44, loss: 0.669588, test acc: 0.969472, test avg acc: 0.953980, IoU: 0.910766, time: 115.67 s
+Train 45, loss: 0.670698, train acc: 0.968471, train avg acc: 0.941204, IoU: 0.899107
+Test 45, loss: 0.673571, test acc: 0.967386, test avg acc: 0.959356, IoU: 0.907194, time: 114.46 s
+Train 46, loss: 0.671238, train acc: 0.967958, train avg acc: 0.941099, IoU: 0.898990
+Test 46, loss: 0.674155, test acc: 0.963642, test avg acc: 0.908917, IoU: 0.875036, time: 115.60 s
+Train 47, loss: 0.670862, train acc: 0.968300, train avg acc: 0.942354, IoU: 0.900663
+Test 47, loss: 0.671105, test acc: 0.968238, test avg acc: 0.961000, IoU: 0.905537, time: 114.64 s
+Train 48, loss: 0.670947, train acc: 0.968221, train avg acc: 0.941092, IoU: 0.898505
+Test 48, loss: 0.671392, test acc: 0.967122, test avg acc: 0.935287, IoU: 0.897464, time: 114.55 s
+Train 49, loss: 0.671363, train acc: 0.967704, train avg acc: 0.940541, IoU: 0.897789
+Test 49, loss: 0.671197, test acc: 0.968284, test avg acc: 0.935154, IoU: 0.903734, time: 115.67 s
+Train 50, loss: 0.670374, train acc: 0.968707, train avg acc: 0.942472, IoU: 0.900306
+Test 50, loss: 0.670350, test acc: 0.968474, test avg acc: 0.938584, IoU: 0.904291, time: 114.91 s
+Train 51, loss: 0.671376, train acc: 0.967770, train avg acc: 0.941170, IoU: 0.898527
+Test 51, loss: 0.670685, test acc: 0.969107, test avg acc: 0.957057, IoU: 0.908853, time: 114.84 s
+Train 52, loss: 0.670271, train acc: 0.968932, train avg acc: 0.943172, IoU: 0.901987
+Test 52, loss: 0.674465, test acc: 0.965134, test avg acc: 0.937156, IoU: 0.899877, time: 115.78 s
+Train 53, loss: 0.671152, train acc: 0.968198, train avg acc: 0.941562, IoU: 0.899509
+Test 53, loss: 0.669873, test acc: 0.969565, test avg acc: 0.948062, IoU: 0.910984, time: 115.06 s
+Train 54, loss: 0.670338, train acc: 0.968649, train avg acc: 0.942311, IoU: 0.900627
+Test 54, loss: 0.670030, test acc: 0.969892, test avg acc: 0.955048, IoU: 0.912243, time: 115.78 s
+Train 55, loss: 0.670577, train acc: 0.968488, train avg acc: 0.942128, IoU: 0.900513
+Test 55, loss: 0.670431, test acc: 0.968338, test avg acc: 0.934679, IoU: 0.902269, time: 114.83 s
+Train 56, loss: 0.670547, train acc: 0.968609, train avg acc: 0.942381, IoU: 0.900478
+Test 56, loss: 0.671549, test acc: 0.968138, test avg acc: 0.941443, IoU: 0.907891, time: 114.90 s
+Train 57, loss: 0.670819, train acc: 0.968329, train avg acc: 0.941619, IoU: 0.899532
+Test 57, loss: 0.670826, test acc: 0.968142, test avg acc: 0.952808, IoU: 0.906650, time: 115.72 s
+Train 58, loss: 0.669965, train acc: 0.969084, train avg acc: 0.943472, IoU: 0.902264
+Test 58, loss: 0.668688, test acc: 0.970293, test avg acc: 0.948770, IoU: 0.912306, time: 114.88 s
+Train 59, loss: 0.670381, train acc: 0.968721, train avg acc: 0.943183, IoU: 0.901671
+Test 59, loss: 0.671083, test acc: 0.968057, test avg acc: 0.954249, IoU: 0.908930, time: 115.18 s
+Train 60, loss: 0.670583, train acc: 0.968424, train avg acc: 0.942397, IoU: 0.900489
+Test 60, loss: 0.673472, test acc: 0.964781, test avg acc: 0.932356, IoU: 0.900177, time: 115.78 s
+Train 61, loss: 0.670025, train acc: 0.968998, train avg acc: 0.943246, IoU: 0.902204
+Test 61, loss: 0.669749, test acc: 0.969205, test avg acc: 0.933810, IoU: 0.904080, time: 114.56 s
+Train 62, loss: 0.671050, train acc: 0.968348, train avg acc: 0.942256, IoU: 0.900651
+Test 62, loss: 0.668950, test acc: 0.969686, test avg acc: 0.943164, IoU: 0.910163, time: 115.72 s
+Train 63, loss: 0.669881, train acc: 0.969262, train avg acc: 0.943495, IoU: 0.902901
+Test 63, loss: 0.669657, test acc: 0.970126, test avg acc: 0.957063, IoU: 0.914804, time: 114.85 s
+Train 64, loss: 0.669538, train acc: 0.969348, train avg acc: 0.943813, IoU: 0.902789
+Test 64, loss: 0.668663, test acc: 0.969979, test avg acc: 0.950450, IoU: 0.912523, time: 114.74 s
+Train 65, loss: 0.670445, train acc: 0.968630, train avg acc: 0.941965, IoU: 0.900237
+Test 65, loss: 0.668329, test acc: 0.970167, test avg acc: 0.950272, IoU: 0.911394, time: 115.80 s
+Train 66, loss: 0.669595, train acc: 0.969415, train avg acc: 0.944000, IoU: 0.903663
+Test 66, loss: 0.668835, test acc: 0.969983, test avg acc: 0.941924, IoU: 0.909036, time: 115.02 s
+Train 67, loss: 0.670144, train acc: 0.968974, train avg acc: 0.942999, IoU: 0.901877
+Test 67, loss: 0.671263, test acc: 0.968252, test avg acc: 0.956172, IoU: 0.909076, time: 115.77 s
+Train 68, loss: 0.670601, train acc: 0.968587, train avg acc: 0.942227, IoU: 0.900431
+Test 68, loss: 0.670035, test acc: 0.970156, test avg acc: 0.954138, IoU: 0.912315, time: 115.00 s
+Train 69, loss: 0.669950, train acc: 0.969186, train avg acc: 0.943732, IoU: 0.902721
+Test 69, loss: 0.669402, test acc: 0.969927, test avg acc: 0.953602, IoU: 0.911685, time: 115.08 s
+Train 70, loss: 0.669421, train acc: 0.969530, train avg acc: 0.944231, IoU: 0.903835
+Test 70, loss: 0.672966, test acc: 0.966797, test avg acc: 0.942809, IoU: 0.903504, time: 115.94 s
+Train 71, loss: 0.670222, train acc: 0.968964, train avg acc: 0.943702, IoU: 0.902793
+Test 71, loss: 0.671167, test acc: 0.967896, test avg acc: 0.947530, IoU: 0.909182, time: 114.90 s
+Train 72, loss: 0.670061, train acc: 0.969177, train avg acc: 0.943434, IoU: 0.902284
+Test 72, loss: 0.670779, test acc: 0.968817, test avg acc: 0.944429, IoU: 0.906905, time: 115.01 s
+Train 73, loss: 0.669746, train acc: 0.969338, train avg acc: 0.944173, IoU: 0.903546
+Test 73, loss: 0.670546, test acc: 0.967295, test avg acc: 0.931810, IoU: 0.895985, time: 115.94 s
+Train 74, loss: 0.669559, train acc: 0.969336, train avg acc: 0.943657, IoU: 0.902416
+Test 74, loss: 0.670150, test acc: 0.969217, test avg acc: 0.950763, IoU: 0.911804, time: 114.54 s
+Train 75, loss: 0.669980, train acc: 0.969027, train avg acc: 0.942737, IoU: 0.901362
+Test 75, loss: 0.672785, test acc: 0.967372, test avg acc: 0.950650, IoU: 0.908925, time: 115.96 s
+Train 76, loss: 0.670355, train acc: 0.968741, train avg acc: 0.942616, IoU: 0.901475
+Test 76, loss: 0.671016, test acc: 0.968713, test avg acc: 0.959954, IoU: 0.912337, time: 115.04 s
+Train 77, loss: 0.669411, train acc: 0.969567, train avg acc: 0.944224, IoU: 0.903784
+Test 77, loss: 0.670510, test acc: 0.967356, test avg acc: 0.952759, IoU: 0.905282, time: 114.57 s
+Train 78, loss: 0.669427, train acc: 0.969432, train avg acc: 0.943961, IoU: 0.903271
+Test 78, loss: 0.668790, test acc: 0.969697, test avg acc: 0.944586, IoU: 0.910950, time: 115.91 s
+Train 79, loss: 0.670176, train acc: 0.968892, train avg acc: 0.943456, IoU: 0.902503
+Test 79, loss: 0.667720, test acc: 0.971240, test avg acc: 0.953690, IoU: 0.916021, time: 114.79 s
+Train 80, loss: 0.669971, train acc: 0.969245, train avg acc: 0.943661, IoU: 0.902632
+Test 80, loss: 0.670914, test acc: 0.967590, test avg acc: 0.928127, IoU: 0.897088, time: 115.65 s
+Train 81, loss: 0.669622, train acc: 0.969429, train avg acc: 0.944328, IoU: 0.903349
+Test 81, loss: 0.668267, test acc: 0.971509, test avg acc: 0.953945, IoU: 0.918455, time: 114.84 s
+Train 82, loss: 0.669736, train acc: 0.969322, train avg acc: 0.944191, IoU: 0.903480
+Test 82, loss: 0.668176, test acc: 0.970812, test avg acc: 0.953666, IoU: 0.915591, time: 115.82 s
+Train 83, loss: 0.669874, train acc: 0.969042, train avg acc: 0.943208, IoU: 0.901921
+Test 83, loss: 0.670046, test acc: 0.969504, test avg acc: 0.952155, IoU: 0.909604, time: 114.87 s
+Train 84, loss: 0.670010, train acc: 0.968984, train avg acc: 0.942987, IoU: 0.902339
+Test 84, loss: 0.669227, test acc: 0.969071, test avg acc: 0.933168, IoU: 0.904137, time: 114.87 s
+Train 85, loss: 0.669505, train acc: 0.969319, train avg acc: 0.944518, IoU: 0.903536
+Test 85, loss: 0.668237, test acc: 0.971084, test avg acc: 0.951091, IoU: 0.915772, time: 115.75 s
+Train 86, loss: 0.668983, train acc: 0.969832, train avg acc: 0.945231, IoU: 0.905548
+Test 86, loss: 0.668980, test acc: 0.969421, test avg acc: 0.943333, IoU: 0.909380, time: 114.74 s
+Train 87, loss: 0.668954, train acc: 0.969990, train avg acc: 0.945403, IoU: 0.905368
+Test 87, loss: 0.669244, test acc: 0.969861, test avg acc: 0.945334, IoU: 0.911433, time: 115.80 s
+Train 88, loss: 0.669040, train acc: 0.969817, train avg acc: 0.944333, IoU: 0.904048
+Test 88, loss: 0.669086, test acc: 0.969858, test avg acc: 0.952260, IoU: 0.914420, time: 114.97 s
+Train 89, loss: 0.668905, train acc: 0.969934, train avg acc: 0.945762, IoU: 0.905805
+Test 89, loss: 0.670605, test acc: 0.967438, test avg acc: 0.954793, IoU: 0.903355, time: 114.66 s
+Train 90, loss: 0.669279, train acc: 0.969665, train avg acc: 0.944420, IoU: 0.903524
+Test 90, loss: 0.669744, test acc: 0.969351, test avg acc: 0.950069, IoU: 0.907871, time: 115.79 s
+Train 91, loss: 0.669065, train acc: 0.969939, train avg acc: 0.945361, IoU: 0.905375
+Test 91, loss: 0.670202, test acc: 0.968975, test avg acc: 0.949280, IoU: 0.911131, time: 114.86 s
+Train 92, loss: 0.669366, train acc: 0.969625, train avg acc: 0.944579, IoU: 0.904643
+Test 92, loss: 0.668787, test acc: 0.970501, test avg acc: 0.951440, IoU: 0.915225, time: 115.09 s
+Train 93, loss: 0.668959, train acc: 0.969968, train avg acc: 0.945520, IoU: 0.905716
+Test 93, loss: 0.667609, test acc: 0.970939, test avg acc: 0.947811, IoU: 0.914646, time: 115.79 s
+Train 94, loss: 0.669280, train acc: 0.969764, train avg acc: 0.945666, IoU: 0.905643
+Test 94, loss: 0.670578, test acc: 0.969142, test avg acc: 0.960509, IoU: 0.909688, time: 114.97 s
+Train 95, loss: 0.668937, train acc: 0.969878, train avg acc: 0.944985, IoU: 0.904936
+Test 95, loss: 0.668576, test acc: 0.969991, test avg acc: 0.950153, IoU: 0.911772, time: 115.84 s
+Train 96, loss: 0.668986, train acc: 0.969838, train avg acc: 0.945373, IoU: 0.905278
+Test 96, loss: 0.672487, test acc: 0.966524, test avg acc: 0.930792, IoU: 0.897624, time: 114.97 s
+Train 97, loss: 0.668747, train acc: 0.970116, train avg acc: 0.944771, IoU: 0.904806
+Test 97, loss: 0.669249, test acc: 0.969975, test avg acc: 0.955092, IoU: 0.912210, time: 114.90 s
+Train 98, loss: 0.668787, train acc: 0.969992, train avg acc: 0.945416, IoU: 0.905302
+Test 98, loss: 0.668872, test acc: 0.971027, test avg acc: 0.950243, IoU: 0.915011, time: 116.10 s
+Train 99, loss: 0.668592, train acc: 0.970175, train avg acc: 0.945799, IoU: 0.905881
+Test 99, loss: 0.669474, test acc: 0.969457, test avg acc: 0.949688, IoU: 0.914945, time: 114.75 s
+Train 100, loss: 0.668690, train acc: 0.970178, train avg acc: 0.946032, IoU: 0.906613
+Test 100, loss: 0.669053, test acc: 0.969748, test avg acc: 0.945432, IoU: 0.910459, time: 115.02 s
+Train 101, loss: 0.668766, train acc: 0.970130, train avg acc: 0.945832, IoU: 0.906243
+Test 101, loss: 0.668653, test acc: 0.970070, test avg acc: 0.960271, IoU: 0.913063, time: 115.64 s
+Train 102, loss: 0.668786, train acc: 0.970066, train avg acc: 0.945380, IoU: 0.905004
+Test 102, loss: 0.668567, test acc: 0.970304, test avg acc: 0.957081, IoU: 0.914320, time: 114.89 s
+Train 103, loss: 0.668311, train acc: 0.970513, train avg acc: 0.947220, IoU: 0.907779
+Test 103, loss: 0.669741, test acc: 0.968557, test avg acc: 0.930230, IoU: 0.899602, time: 115.59 s
+Train 104, loss: 0.668243, train acc: 0.970581, train avg acc: 0.946246, IoU: 0.907014
+Test 104, loss: 0.668570, test acc: 0.969685, test avg acc: 0.937618, IoU: 0.906777, time: 114.87 s
+Train 105, loss: 0.668384, train acc: 0.970433, train avg acc: 0.946531, IoU: 0.906850
+Test 105, loss: 0.670204, test acc: 0.968376, test avg acc: 0.940244, IoU: 0.907867, time: 115.13 s
+Train 106, loss: 0.668465, train acc: 0.970435, train avg acc: 0.946835, IoU: 0.907265
+Test 106, loss: 0.668576, test acc: 0.969881, test avg acc: 0.950356, IoU: 0.914600, time: 115.68 s
+Train 107, loss: 0.668536, train acc: 0.970211, train avg acc: 0.945816, IoU: 0.905826
+Test 107, loss: 0.666874, test acc: 0.971836, test avg acc: 0.952213, IoU: 0.917520, time: 114.66 s
+Train 108, loss: 0.667976, train acc: 0.970797, train avg acc: 0.947154, IoU: 0.908287
+Test 108, loss: 0.669351, test acc: 0.969440, test avg acc: 0.948223, IoU: 0.913159, time: 114.85 s
+Train 109, loss: 0.667958, train acc: 0.970867, train avg acc: 0.947633, IoU: 0.908628
+Test 109, loss: 0.668728, test acc: 0.970577, test avg acc: 0.953054, IoU: 0.912230, time: 115.80 s
+Train 110, loss: 0.668142, train acc: 0.970673, train avg acc: 0.946554, IoU: 0.907350
+Test 110, loss: 0.671564, test acc: 0.967619, test avg acc: 0.939067, IoU: 0.904879, time: 114.98 s
+Train 111, loss: 0.668664, train acc: 0.970061, train avg acc: 0.945604, IoU: 0.905058
+Test 111, loss: 0.671703, test acc: 0.967280, test avg acc: 0.945800, IoU: 0.906708, time: 115.81 s
+Train 112, loss: 0.668961, train acc: 0.969857, train avg acc: 0.945334, IoU: 0.905515
+Test 112, loss: 0.667206, test acc: 0.971520, test avg acc: 0.957432, IoU: 0.917428, time: 115.04 s
+Train 113, loss: 0.668194, train acc: 0.970607, train avg acc: 0.947296, IoU: 0.908200
+Test 113, loss: 0.669135, test acc: 0.969945, test avg acc: 0.951419, IoU: 0.912789, time: 115.11 s
+Train 114, loss: 0.668062, train acc: 0.970699, train avg acc: 0.946397, IoU: 0.907604
+Test 114, loss: 0.666840, test acc: 0.971964, test avg acc: 0.952352, IoU: 0.918019, time: 115.70 s
+Train 115, loss: 0.668164, train acc: 0.970635, train avg acc: 0.946875, IoU: 0.907425
+Test 115, loss: 0.667886, test acc: 0.971442, test avg acc: 0.960002, IoU: 0.917775, time: 115.10 s
+Train 116, loss: 0.668001, train acc: 0.970717, train avg acc: 0.946672, IoU: 0.907526
+Test 116, loss: 0.667134, test acc: 0.971271, test avg acc: 0.953780, IoU: 0.915458, time: 114.82 s
+Train 117, loss: 0.668005, train acc: 0.970719, train avg acc: 0.946794, IoU: 0.907950
+Test 117, loss: 0.668702, test acc: 0.970028, test avg acc: 0.947276, IoU: 0.910132, time: 115.73 s
+Train 118, loss: 0.668304, train acc: 0.970540, train avg acc: 0.946835, IoU: 0.907534
+Test 118, loss: 0.668224, test acc: 0.970486, test avg acc: 0.948265, IoU: 0.912757, time: 114.63 s
+Train 119, loss: 0.667918, train acc: 0.971014, train avg acc: 0.947655, IoU: 0.909284
+Test 119, loss: 0.667248, test acc: 0.971259, test avg acc: 0.950915, IoU: 0.915406, time: 116.00 s
+Train 120, loss: 0.667468, train acc: 0.971261, train avg acc: 0.948239, IoU: 0.910338
+Test 120, loss: 0.669489, test acc: 0.969343, test avg acc: 0.944504, IoU: 0.907668, time: 115.03 s
+Train 121, loss: 0.668194, train acc: 0.970575, train avg acc: 0.947150, IoU: 0.908153
+Test 121, loss: 0.668304, test acc: 0.970476, test avg acc: 0.941856, IoU: 0.910591, time: 115.04 s
+Train 122, loss: 0.667900, train acc: 0.970847, train avg acc: 0.947277, IoU: 0.908286
+Test 122, loss: 0.669519, test acc: 0.970021, test avg acc: 0.957908, IoU: 0.913028, time: 115.68 s
+Train 123, loss: 0.668036, train acc: 0.970620, train avg acc: 0.946807, IoU: 0.907524
+Test 123, loss: 0.667036, test acc: 0.971655, test avg acc: 0.948219, IoU: 0.916522, time: 114.64 s
+Train 124, loss: 0.667377, train acc: 0.971355, train avg acc: 0.948771, IoU: 0.910869
+Test 124, loss: 0.669667, test acc: 0.969634, test avg acc: 0.955197, IoU: 0.912718, time: 114.96 s
+Train 125, loss: 0.667448, train acc: 0.971146, train avg acc: 0.947325, IoU: 0.908684
+Test 125, loss: 0.669785, test acc: 0.969200, test avg acc: 0.950029, IoU: 0.913367, time: 115.95 s
+Train 126, loss: 0.668055, train acc: 0.970673, train avg acc: 0.947343, IoU: 0.908384
+Test 126, loss: 0.667963, test acc: 0.970977, test avg acc: 0.944608, IoU: 0.913870, time: 114.87 s
+Train 127, loss: 0.667293, train acc: 0.971649, train avg acc: 0.948564, IoU: 0.910776
+Test 127, loss: 0.670640, test acc: 0.967715, test avg acc: 0.938677, IoU: 0.907933, time: 115.44 s
+Train 128, loss: 0.666952, train acc: 0.971812, train avg acc: 0.949636, IoU: 0.911879
+Test 128, loss: 0.668292, test acc: 0.970526, test avg acc: 0.953017, IoU: 0.913820, time: 114.82 s
+Train 129, loss: 0.667744, train acc: 0.970989, train avg acc: 0.947568, IoU: 0.908518
+Test 129, loss: 0.666821, test acc: 0.971841, test avg acc: 0.950543, IoU: 0.917848, time: 114.98 s
+Train 130, loss: 0.667163, train acc: 0.971516, train avg acc: 0.948341, IoU: 0.910593
+Test 130, loss: 0.668197, test acc: 0.970398, test avg acc: 0.946086, IoU: 0.913891, time: 115.43 s
+Train 131, loss: 0.667292, train acc: 0.971403, train avg acc: 0.948915, IoU: 0.910616
+Test 131, loss: 0.667129, test acc: 0.971494, test avg acc: 0.953521, IoU: 0.919204, time: 115.12 s
+Train 132, loss: 0.667140, train acc: 0.971543, train avg acc: 0.948788, IoU: 0.910485
+Test 132, loss: 0.668723, test acc: 0.970199, test avg acc: 0.952556, IoU: 0.916816, time: 115.87 s
+Train 133, loss: 0.666996, train acc: 0.971674, train avg acc: 0.949518, IoU: 0.911720
+Test 133, loss: 0.668196, test acc: 0.970332, test avg acc: 0.954874, IoU: 0.915363, time: 114.77 s
+Train 134, loss: 0.667405, train acc: 0.971131, train avg acc: 0.948110, IoU: 0.909672
+Test 134, loss: 0.669071, test acc: 0.969271, test avg acc: 0.938409, IoU: 0.906417, time: 115.18 s
+Train 135, loss: 0.667198, train acc: 0.971322, train avg acc: 0.947814, IoU: 0.909109
+Test 135, loss: 0.667812, test acc: 0.970366, test avg acc: 0.944970, IoU: 0.913028, time: 115.63 s
+Train 136, loss: 0.667226, train acc: 0.971521, train avg acc: 0.948787, IoU: 0.910540
+Test 136, loss: 0.667858, test acc: 0.970748, test avg acc: 0.944397, IoU: 0.912327, time: 115.03 s
+Train 137, loss: 0.667130, train acc: 0.971650, train avg acc: 0.949127, IoU: 0.911161
+Test 137, loss: 0.667144, test acc: 0.971090, test avg acc: 0.949273, IoU: 0.914963, time: 115.97 s
+Train 138, loss: 0.667117, train acc: 0.971609, train avg acc: 0.949093, IoU: 0.911055
+Test 138, loss: 0.666873, test acc: 0.971622, test avg acc: 0.954519, IoU: 0.917219, time: 114.78 s
+Train 139, loss: 0.666631, train acc: 0.972000, train avg acc: 0.949300, IoU: 0.911677
+Test 139, loss: 0.668362, test acc: 0.970635, test avg acc: 0.946883, IoU: 0.914442, time: 114.98 s
+Train 140, loss: 0.666710, train acc: 0.971952, train avg acc: 0.949620, IoU: 0.912046
+Test 140, loss: 0.667722, test acc: 0.971507, test avg acc: 0.948396, IoU: 0.915984, time: 115.68 s
+Train 141, loss: 0.667020, train acc: 0.971702, train avg acc: 0.948929, IoU: 0.911032
+Test 141, loss: 0.667626, test acc: 0.970841, test avg acc: 0.949707, IoU: 0.913867, time: 114.89 s
+Train 142, loss: 0.666533, train acc: 0.972200, train avg acc: 0.950068, IoU: 0.912756
+Test 142, loss: 0.668404, test acc: 0.970100, test avg acc: 0.945791, IoU: 0.911936, time: 115.63 s
+Train 143, loss: 0.666476, train acc: 0.972245, train avg acc: 0.950466, IoU: 0.913390
+Test 143, loss: 0.668171, test acc: 0.970026, test avg acc: 0.936268, IoU: 0.906829, time: 114.93 s
+Train 144, loss: 0.666398, train acc: 0.972226, train avg acc: 0.950129, IoU: 0.912816
+Test 144, loss: 0.668954, test acc: 0.969888, test avg acc: 0.955342, IoU: 0.909837, time: 115.08 s
+Train 145, loss: 0.666499, train acc: 0.972159, train avg acc: 0.950075, IoU: 0.913123
+Test 145, loss: 0.666999, test acc: 0.971710, test avg acc: 0.947666, IoU: 0.916037, time: 116.17 s
+Train 146, loss: 0.666791, train acc: 0.971782, train avg acc: 0.949393, IoU: 0.911768
+Test 146, loss: 0.668337, test acc: 0.970659, test avg acc: 0.953408, IoU: 0.915253, time: 114.97 s
+Train 147, loss: 0.666406, train acc: 0.972325, train avg acc: 0.950081, IoU: 0.912670
+Test 147, loss: 0.666969, test acc: 0.971614, test avg acc: 0.946457, IoU: 0.915138, time: 116.17 s
+Train 148, loss: 0.666523, train acc: 0.972160, train avg acc: 0.950077, IoU: 0.913027
+Test 148, loss: 0.672399, test acc: 0.965987, test avg acc: 0.944534, IoU: 0.907274, time: 115.10 s
+Train 149, loss: 0.666233, train acc: 0.972442, train avg acc: 0.951159, IoU: 0.914153
+Test 149, loss: 0.667048, test acc: 0.971679, test avg acc: 0.952356, IoU: 0.917202, time: 115.10 s
+Train 150, loss: 0.666334, train acc: 0.972133, train avg acc: 0.950085, IoU: 0.912757
+Test 150, loss: 0.666700, test acc: 0.971577, test avg acc: 0.945429, IoU: 0.914483, time: 115.93 s
+Train 151, loss: 0.666647, train acc: 0.971918, train avg acc: 0.949188, IoU: 0.911379
+Test 151, loss: 0.666984, test acc: 0.972121, test avg acc: 0.957015, IoU: 0.920956, time: 114.86 s
+Train 152, loss: 0.666571, train acc: 0.972079, train avg acc: 0.949732, IoU: 0.912277
+Test 152, loss: 0.667894, test acc: 0.970880, test avg acc: 0.959695, IoU: 0.916810, time: 114.69 s
+Train 153, loss: 0.666489, train acc: 0.972088, train avg acc: 0.949714, IoU: 0.912480
+Test 153, loss: 0.666544, test acc: 0.971931, test avg acc: 0.950026, IoU: 0.917807, time: 115.72 s
+Train 154, loss: 0.666446, train acc: 0.972106, train avg acc: 0.950354, IoU: 0.912726
+Test 154, loss: 0.669152, test acc: 0.970039, test avg acc: 0.941317, IoU: 0.907212, time: 114.81 s
+Train 155, loss: 0.666423, train acc: 0.972279, train avg acc: 0.950689, IoU: 0.913937
+Test 155, loss: 0.667707, test acc: 0.970994, test avg acc: 0.953152, IoU: 0.916346, time: 115.52 s
+Train 156, loss: 0.666036, train acc: 0.972606, train avg acc: 0.950973, IoU: 0.914259
+Test 156, loss: 0.667155, test acc: 0.970983, test avg acc: 0.946849, IoU: 0.914019, time: 115.24 s
+Train 157, loss: 0.666122, train acc: 0.972475, train avg acc: 0.950587, IoU: 0.913645
+Test 157, loss: 0.668453, test acc: 0.970194, test avg acc: 0.942465, IoU: 0.911298, time: 115.08 s
+Train 158, loss: 0.665963, train acc: 0.972690, train avg acc: 0.950613, IoU: 0.914024
+Test 158, loss: 0.666446, test acc: 0.972083, test avg acc: 0.958181, IoU: 0.920458, time: 115.89 s
+Train 159, loss: 0.665794, train acc: 0.972799, train avg acc: 0.951054, IoU: 0.914977
+Test 159, loss: 0.670987, test acc: 0.967777, test avg acc: 0.950907, IoU: 0.909422, time: 115.10 s
+Train 160, loss: 0.665881, train acc: 0.972730, train avg acc: 0.951721, IoU: 0.915414
+Test 160, loss: 0.666277, test acc: 0.972213, test avg acc: 0.954587, IoU: 0.920228, time: 115.08 s
+Train 161, loss: 0.665729, train acc: 0.972826, train avg acc: 0.951625, IoU: 0.915163
+Test 161, loss: 0.666409, test acc: 0.972253, test avg acc: 0.955249, IoU: 0.920733, time: 115.83 s
+Train 162, loss: 0.665653, train acc: 0.972976, train avg acc: 0.951717, IoU: 0.915424
+Test 162, loss: 0.668538, test acc: 0.970660, test avg acc: 0.946414, IoU: 0.912314, time: 115.06 s
+Train 163, loss: 0.665359, train acc: 0.973194, train avg acc: 0.952273, IoU: 0.916286
+Test 163, loss: 0.667020, test acc: 0.971136, test avg acc: 0.954970, IoU: 0.915441, time: 115.81 s
+Train 164, loss: 0.665245, train acc: 0.973285, train avg acc: 0.952416, IoU: 0.916589
+Test 164, loss: 0.667065, test acc: 0.971684, test avg acc: 0.956498, IoU: 0.919223, time: 114.82 s
+Train 165, loss: 0.665472, train acc: 0.973147, train avg acc: 0.951934, IoU: 0.915880
+Test 165, loss: 0.668786, test acc: 0.969906, test avg acc: 0.946193, IoU: 0.909130, time: 115.02 s
+Train 166, loss: 0.665590, train acc: 0.972930, train avg acc: 0.951542, IoU: 0.915435
+Test 166, loss: 0.668028, test acc: 0.970846, test avg acc: 0.952956, IoU: 0.914695, time: 115.84 s
+Train 167, loss: 0.665307, train acc: 0.973208, train avg acc: 0.952462, IoU: 0.916591
+Test 167, loss: 0.668158, test acc: 0.970194, test avg acc: 0.958887, IoU: 0.912211, time: 114.77 s
+Train 168, loss: 0.665222, train acc: 0.973342, train avg acc: 0.952633, IoU: 0.916801
+Test 168, loss: 0.667348, test acc: 0.971352, test avg acc: 0.947268, IoU: 0.914907, time: 114.81 s
+Train 169, loss: 0.665253, train acc: 0.973305, train avg acc: 0.952559, IoU: 0.916687
+Test 169, loss: 0.666517, test acc: 0.971784, test avg acc: 0.947944, IoU: 0.916103, time: 115.81 s
+Train 170, loss: 0.664945, train acc: 0.973676, train avg acc: 0.953514, IoU: 0.918206
+Test 170, loss: 0.666257, test acc: 0.972280, test avg acc: 0.954787, IoU: 0.919260, time: 114.67 s
+Train 171, loss: 0.665216, train acc: 0.973377, train avg acc: 0.952164, IoU: 0.916167
+Test 171, loss: 0.666408, test acc: 0.972225, test avg acc: 0.958073, IoU: 0.920913, time: 115.64 s
+Train 172, loss: 0.665105, train acc: 0.973432, train avg acc: 0.952292, IoU: 0.916581
+Test 172, loss: 0.666562, test acc: 0.972025, test avg acc: 0.953831, IoU: 0.918980, time: 114.96 s
+Train 173, loss: 0.665001, train acc: 0.973498, train avg acc: 0.953388, IoU: 0.917757
+Test 173, loss: 0.666300, test acc: 0.972131, test avg acc: 0.953516, IoU: 0.918937, time: 114.82 s
+Train 174, loss: 0.664681, train acc: 0.973741, train avg acc: 0.953373, IoU: 0.917773
+Test 174, loss: 0.668505, test acc: 0.970408, test avg acc: 0.946521, IoU: 0.912537, time: 115.43 s
+Train 175, loss: 0.665387, train acc: 0.973166, train avg acc: 0.952391, IoU: 0.916456
+Test 175, loss: 0.665812, test acc: 0.972374, test avg acc: 0.955306, IoU: 0.921226, time: 114.91 s
+Train 176, loss: 0.664659, train acc: 0.973863, train avg acc: 0.953830, IoU: 0.918709
+Test 176, loss: 0.666703, test acc: 0.971732, test avg acc: 0.950589, IoU: 0.917078, time: 115.23 s
+Train 177, loss: 0.664605, train acc: 0.973940, train avg acc: 0.953844, IoU: 0.918520
+Test 177, loss: 0.666140, test acc: 0.972115, test avg acc: 0.951833, IoU: 0.919186, time: 115.77 s
+Train 178, loss: 0.664455, train acc: 0.974006, train avg acc: 0.953921, IoU: 0.919275
+Test 178, loss: 0.666584, test acc: 0.971997, test avg acc: 0.956781, IoU: 0.918330, time: 114.92 s
+Train 179, loss: 0.664933, train acc: 0.973511, train avg acc: 0.953478, IoU: 0.917547
+Test 179, loss: 0.666426, test acc: 0.971683, test avg acc: 0.956385, IoU: 0.918063, time: 115.67 s
+Train 180, loss: 0.665164, train acc: 0.973369, train avg acc: 0.953041, IoU: 0.917183
+Test 180, loss: 0.666779, test acc: 0.971945, test avg acc: 0.958457, IoU: 0.919316, time: 114.91 s
+Train 181, loss: 0.664268, train acc: 0.974165, train avg acc: 0.954423, IoU: 0.919703
+Test 181, loss: 0.666422, test acc: 0.971829, test avg acc: 0.947767, IoU: 0.916610, time: 115.09 s
+Train 182, loss: 0.664468, train acc: 0.974032, train avg acc: 0.954067, IoU: 0.919210
+Test 182, loss: 0.666129, test acc: 0.971999, test avg acc: 0.952634, IoU: 0.919001, time: 115.79 s
+Train 183, loss: 0.664172, train acc: 0.974363, train avg acc: 0.954991, IoU: 0.920709
+Test 183, loss: 0.665764, test acc: 0.972709, test avg acc: 0.954673, IoU: 0.921838, time: 115.07 s
+Train 184, loss: 0.664027, train acc: 0.974382, train avg acc: 0.955337, IoU: 0.920551
+Test 184, loss: 0.665735, test acc: 0.972899, test avg acc: 0.955664, IoU: 0.921878, time: 115.60 s
+Train 185, loss: 0.664133, train acc: 0.974284, train avg acc: 0.954711, IoU: 0.920018
+Test 185, loss: 0.665935, test acc: 0.972336, test avg acc: 0.950199, IoU: 0.918747, time: 114.92 s
+Train 186, loss: 0.664028, train acc: 0.974554, train avg acc: 0.955335, IoU: 0.921034
+Test 186, loss: 0.666702, test acc: 0.971929, test avg acc: 0.952180, IoU: 0.918203, time: 114.57 s
+Train 187, loss: 0.663912, train acc: 0.974555, train avg acc: 0.955175, IoU: 0.920953
+Test 187, loss: 0.666164, test acc: 0.972185, test avg acc: 0.948930, IoU: 0.918525, time: 115.44 s
+Train 188, loss: 0.663944, train acc: 0.974594, train avg acc: 0.955534, IoU: 0.921287
+Test 188, loss: 0.665556, test acc: 0.972790, test avg acc: 0.958471, IoU: 0.922839, time: 114.84 s
+Train 189, loss: 0.663779, train acc: 0.974664, train avg acc: 0.955586, IoU: 0.921200
+Test 189, loss: 0.666201, test acc: 0.972142, test avg acc: 0.946952, IoU: 0.916774, time: 115.39 s
+Train 190, loss: 0.664005, train acc: 0.974433, train avg acc: 0.954746, IoU: 0.920274
+Test 190, loss: 0.666256, test acc: 0.972298, test avg acc: 0.954887, IoU: 0.920936, time: 114.98 s
+Train 191, loss: 0.663671, train acc: 0.974877, train avg acc: 0.955838, IoU: 0.922323
+Test 191, loss: 0.666539, test acc: 0.971940, test avg acc: 0.956736, IoU: 0.919945, time: 115.06 s
+Train 192, loss: 0.663776, train acc: 0.974736, train avg acc: 0.955607, IoU: 0.921427
+Test 192, loss: 0.665975, test acc: 0.972511, test avg acc: 0.955486, IoU: 0.921796, time: 115.66 s
+Train 193, loss: 0.663622, train acc: 0.974859, train avg acc: 0.955726, IoU: 0.921627
+Test 193, loss: 0.666317, test acc: 0.972150, test avg acc: 0.955071, IoU: 0.919967, time: 114.90 s
+Train 194, loss: 0.663617, train acc: 0.974892, train avg acc: 0.956009, IoU: 0.922210
+Test 194, loss: 0.665879, test acc: 0.972153, test avg acc: 0.955126, IoU: 0.919410, time: 114.88 s
+Train 195, loss: 0.663606, train acc: 0.974831, train avg acc: 0.955744, IoU: 0.921567
+Test 195, loss: 0.666407, test acc: 0.971835, test avg acc: 0.951938, IoU: 0.918262, time: 115.44 s
+Train 196, loss: 0.663384, train acc: 0.975132, train avg acc: 0.956443, IoU: 0.922937
+Test 196, loss: 0.665611, test acc: 0.972584, test avg acc: 0.958656, IoU: 0.921424, time: 114.67 s
+Train 197, loss: 0.663268, train acc: 0.975255, train avg acc: 0.956666, IoU: 0.923125
+Test 197, loss: 0.665970, test acc: 0.972389, test avg acc: 0.950124, IoU: 0.918530, time: 115.66 s
+Train 198, loss: 0.663230, train acc: 0.975269, train avg acc: 0.957221, IoU: 0.924045
+Test 198, loss: 0.665611, test acc: 0.972762, test avg acc: 0.954364, IoU: 0.921550, time: 114.49 s
+Train 199, loss: 0.663169, train acc: 0.975305, train avg acc: 0.956793, IoU: 0.923574
+Test 199, loss: 0.666201, test acc: 0.972252, test avg acc: 0.953038, IoU: 0.920423, time: 115.20 s
+Train 200, loss: 0.662996, train acc: 0.975462, train avg acc: 0.957532, IoU: 0.924496
+Test 200, loss: 0.665673, test acc: 0.972865, test avg acc: 0.958365, IoU: 0.922233, time: 114.93 s
+Train 201, loss: 0.663267, train acc: 0.975173, train avg acc: 0.956295, IoU: 0.922821
+Test 201, loss: 0.668169, test acc: 0.971015, test avg acc: 0.945573, IoU: 0.914260, time: 114.65 s
+Train 202, loss: 0.663019, train acc: 0.975494, train avg acc: 0.957496, IoU: 0.924286
+Test 202, loss: 0.665963, test acc: 0.972587, test avg acc: 0.953883, IoU: 0.920669, time: 115.03 s
+Train 203, loss: 0.662989, train acc: 0.975505, train avg acc: 0.956777, IoU: 0.923858
+Test 203, loss: 0.665818, test acc: 0.972537, test avg acc: 0.954788, IoU: 0.920726, time: 114.69 s
+Train 204, loss: 0.662783, train acc: 0.975651, train avg acc: 0.957419, IoU: 0.924404
+Test 204, loss: 0.666173, test acc: 0.972150, test avg acc: 0.957171, IoU: 0.920358, time: 115.42 s
+Train 205, loss: 0.662695, train acc: 0.975750, train avg acc: 0.957476, IoU: 0.924773
+Test 205, loss: 0.666474, test acc: 0.971976, test avg acc: 0.963407, IoU: 0.919173, time: 114.71 s
+Train 206, loss: 0.662697, train acc: 0.975789, train avg acc: 0.957740, IoU: 0.924898
+Test 206, loss: 0.665387, test acc: 0.972853, test avg acc: 0.957608, IoU: 0.922672, time: 114.87 s
+Train 207, loss: 0.662651, train acc: 0.975809, train avg acc: 0.957603, IoU: 0.925118
+Test 207, loss: 0.665395, test acc: 0.972748, test avg acc: 0.951516, IoU: 0.920433, time: 115.47 s
+Train 208, loss: 0.662577, train acc: 0.975922, train avg acc: 0.957972, IoU: 0.925351
+Test 208, loss: 0.666004, test acc: 0.972060, test avg acc: 0.954062, IoU: 0.918969, time: 114.50 s
+Train 209, loss: 0.662542, train acc: 0.975848, train avg acc: 0.957935, IoU: 0.925350
+Test 209, loss: 0.665741, test acc: 0.972400, test avg acc: 0.951871, IoU: 0.919790, time: 115.48 s
+Train 210, loss: 0.662531, train acc: 0.975934, train avg acc: 0.957974, IoU: 0.925274
+Test 210, loss: 0.665704, test acc: 0.972624, test avg acc: 0.951133, IoU: 0.920308, time: 114.87 s
+Train 211, loss: 0.662281, train acc: 0.976218, train avg acc: 0.958429, IoU: 0.926376
+Test 211, loss: 0.665566, test acc: 0.972721, test avg acc: 0.952418, IoU: 0.920903, time: 114.50 s
+Train 212, loss: 0.662177, train acc: 0.976261, train avg acc: 0.958931, IoU: 0.926828
+Test 212, loss: 0.666009, test acc: 0.972690, test avg acc: 0.956009, IoU: 0.921508, time: 115.33 s
+Train 213, loss: 0.662287, train acc: 0.976164, train avg acc: 0.958498, IoU: 0.926288
+Test 213, loss: 0.665239, test acc: 0.972957, test avg acc: 0.954483, IoU: 0.922427, time: 114.87 s
+Train 214, loss: 0.662128, train acc: 0.976273, train avg acc: 0.958759, IoU: 0.926527
+Test 214, loss: 0.665241, test acc: 0.973050, test avg acc: 0.957951, IoU: 0.922613, time: 115.39 s
+Train 215, loss: 0.662034, train acc: 0.976439, train avg acc: 0.959344, IoU: 0.927464
+Test 215, loss: 0.665347, test acc: 0.972912, test avg acc: 0.957058, IoU: 0.921887, time: 114.60 s
+Train 216, loss: 0.662047, train acc: 0.976412, train avg acc: 0.958979, IoU: 0.927091
+Test 216, loss: 0.665242, test acc: 0.972915, test avg acc: 0.953877, IoU: 0.921590, time: 115.49 s
+Train 217, loss: 0.661942, train acc: 0.976510, train avg acc: 0.959288, IoU: 0.927430
+Test 217, loss: 0.665826, test acc: 0.972613, test avg acc: 0.956472, IoU: 0.921112, time: 114.40 s
+Train 218, loss: 0.661836, train acc: 0.976601, train avg acc: 0.959526, IoU: 0.927909
+Test 218, loss: 0.665983, test acc: 0.972394, test avg acc: 0.960249, IoU: 0.920308, time: 114.60 s
+Train 219, loss: 0.661623, train acc: 0.976786, train avg acc: 0.960029, IoU: 0.928657
+Test 219, loss: 0.665158, test acc: 0.972999, test avg acc: 0.958589, IoU: 0.922964, time: 115.56 s
+Train 220, loss: 0.661716, train acc: 0.976733, train avg acc: 0.960224, IoU: 0.928605
+Test 220, loss: 0.665500, test acc: 0.972793, test avg acc: 0.951859, IoU: 0.920733, time: 114.60 s
+Train 221, loss: 0.661648, train acc: 0.976861, train avg acc: 0.960328, IoU: 0.929124
+Test 221, loss: 0.665526, test acc: 0.972619, test avg acc: 0.949963, IoU: 0.919726, time: 115.33 s
+Train 222, loss: 0.661672, train acc: 0.976774, train avg acc: 0.960050, IoU: 0.928820
+Test 222, loss: 0.666029, test acc: 0.972387, test avg acc: 0.950056, IoU: 0.918648, time: 114.91 s
+Train 223, loss: 0.661478, train acc: 0.977053, train avg acc: 0.960425, IoU: 0.929423
+Test 223, loss: 0.665309, test acc: 0.972925, test avg acc: 0.959548, IoU: 0.921976, time: 115.53 s
+Train 224, loss: 0.661466, train acc: 0.977071, train avg acc: 0.960461, IoU: 0.929571
+Test 224, loss: 0.665105, test acc: 0.973120, test avg acc: 0.959782, IoU: 0.923052, time: 114.48 s
+Train 225, loss: 0.661430, train acc: 0.977045, train avg acc: 0.960453, IoU: 0.929448
+Test 225, loss: 0.665218, test acc: 0.972990, test avg acc: 0.953169, IoU: 0.921836, time: 114.91 s
+Train 226, loss: 0.661162, train acc: 0.977303, train avg acc: 0.961038, IoU: 0.930289
+Test 226, loss: 0.665257, test acc: 0.973032, test avg acc: 0.955190, IoU: 0.922576, time: 115.37 s
+Train 227, loss: 0.661218, train acc: 0.977204, train avg acc: 0.960754, IoU: 0.929930
+Test 227, loss: 0.665776, test acc: 0.972418, test avg acc: 0.952449, IoU: 0.919745, time: 114.54 s
+Train 228, loss: 0.661296, train acc: 0.977173, train avg acc: 0.960570, IoU: 0.929709
+Test 228, loss: 0.665224, test acc: 0.973069, test avg acc: 0.957973, IoU: 0.922555, time: 115.42 s
+Train 229, loss: 0.661130, train acc: 0.977353, train avg acc: 0.961270, IoU: 0.930732
+Test 229, loss: 0.665240, test acc: 0.972903, test avg acc: 0.954723, IoU: 0.921771, time: 114.90 s
+Train 230, loss: 0.660969, train acc: 0.977526, train avg acc: 0.961617, IoU: 0.931023
+Test 230, loss: 0.665005, test acc: 0.973248, test avg acc: 0.954988, IoU: 0.922879, time: 114.52 s
+Train 231, loss: 0.660983, train acc: 0.977514, train avg acc: 0.961401, IoU: 0.931006
+Test 231, loss: 0.665068, test acc: 0.973119, test avg acc: 0.957817, IoU: 0.922656, time: 115.65 s
+Train 232, loss: 0.661085, train acc: 0.977438, train avg acc: 0.961218, IoU: 0.930526
+Test 232, loss: 0.665320, test acc: 0.972926, test avg acc: 0.950957, IoU: 0.920969, time: 115.23 s
+Train 233, loss: 0.660920, train acc: 0.977586, train avg acc: 0.961476, IoU: 0.931082
+Test 233, loss: 0.665452, test acc: 0.972809, test avg acc: 0.952931, IoU: 0.921314, time: 115.90 s
+Train 234, loss: 0.660958, train acc: 0.977547, train avg acc: 0.961469, IoU: 0.931300
+Test 234, loss: 0.665216, test acc: 0.973068, test avg acc: 0.955665, IoU: 0.922281, time: 115.04 s
+Train 235, loss: 0.660823, train acc: 0.977718, train avg acc: 0.961843, IoU: 0.931534
+Test 235, loss: 0.664969, test acc: 0.973210, test avg acc: 0.955562, IoU: 0.923273, time: 115.19 s
+Train 236, loss: 0.660761, train acc: 0.977740, train avg acc: 0.961765, IoU: 0.931653
+Test 236, loss: 0.664894, test acc: 0.973355, test avg acc: 0.956527, IoU: 0.923463, time: 115.68 s
+Train 237, loss: 0.660746, train acc: 0.977743, train avg acc: 0.962218, IoU: 0.932056
+Test 237, loss: 0.665172, test acc: 0.973042, test avg acc: 0.955475, IoU: 0.923180, time: 115.18 s
+Train 238, loss: 0.660792, train acc: 0.977712, train avg acc: 0.961873, IoU: 0.931774
+Test 238, loss: 0.665108, test acc: 0.973080, test avg acc: 0.953730, IoU: 0.922590, time: 115.32 s
+Train 239, loss: 0.660671, train acc: 0.977866, train avg acc: 0.962219, IoU: 0.932366
+Test 239, loss: 0.665122, test acc: 0.973053, test avg acc: 0.955252, IoU: 0.922544, time: 115.79 s
+Train 240, loss: 0.660616, train acc: 0.977863, train avg acc: 0.961905, IoU: 0.931901
+Test 240, loss: 0.665093, test acc: 0.973052, test avg acc: 0.954852, IoU: 0.922462, time: 114.94 s
+Train 241, loss: 0.660498, train acc: 0.977969, train avg acc: 0.962294, IoU: 0.932636
+Test 241, loss: 0.665351, test acc: 0.972995, test avg acc: 0.954936, IoU: 0.922617, time: 115.46 s
+Train 242, loss: 0.660556, train acc: 0.977977, train avg acc: 0.962223, IoU: 0.932490
+Test 242, loss: 0.665068, test acc: 0.973158, test avg acc: 0.957256, IoU: 0.923148, time: 114.75 s
+Train 243, loss: 0.660529, train acc: 0.977989, train avg acc: 0.962344, IoU: 0.932733
+Test 243, loss: 0.665254, test acc: 0.973023, test avg acc: 0.955720, IoU: 0.922428, time: 114.86 s
+Train 244, loss: 0.660518, train acc: 0.977990, train avg acc: 0.962455, IoU: 0.932604
+Test 244, loss: 0.665111, test acc: 0.973015, test avg acc: 0.954468, IoU: 0.922302, time: 115.77 s
+Train 245, loss: 0.660594, train acc: 0.977955, train avg acc: 0.962205, IoU: 0.932477
+Test 245, loss: 0.665634, test acc: 0.972573, test avg acc: 0.951843, IoU: 0.920279, time: 114.90 s
+Train 246, loss: 0.660413, train acc: 0.978121, train avg acc: 0.962514, IoU: 0.933063
+Test 246, loss: 0.665042, test acc: 0.973134, test avg acc: 0.956302, IoU: 0.923275, time: 115.09 s
+Train 247, loss: 0.660511, train acc: 0.977964, train avg acc: 0.962360, IoU: 0.932728
+Test 247, loss: 0.665133, test acc: 0.973115, test avg acc: 0.953858, IoU: 0.922842, time: 115.51 s
+Train 248, loss: 0.660514, train acc: 0.978014, train avg acc: 0.962291, IoU: 0.932929
+Test 248, loss: 0.665249, test acc: 0.973016, test avg acc: 0.955773, IoU: 0.922614, time: 114.88 s
+Train 249, loss: 0.660332, train acc: 0.978218, train avg acc: 0.962859, IoU: 0.933401
+Test 249, loss: 0.665018, test acc: 0.973146, test avg acc: 0.955613, IoU: 0.923135, time: 115.46 s
