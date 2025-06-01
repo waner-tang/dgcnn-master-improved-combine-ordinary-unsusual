@@ -301,8 +301,15 @@ def predict(args,io):
             model.load_state_dict(torch.load(args.model_path,weights_only = True))
             model = model.eval()
             data_o = data_o.to(device)
-            logits = model(data_o)
-            preds = torch.argmax(logits, dim=2)
+            
+            # 添加内存管理
+            with torch.no_grad():  # 禁用梯度计算节省内存
+                logits = model(data_o)
+                preds = torch.argmax(logits, dim=2)
+            
+            # 清理GPU内存
+            torch.cuda.empty_cache()
+            
             preds = preds + 1
             new_pointcloud = np.hstack((data.reshape(-1,6),preds.cpu().numpy().reshape(-1,1)))
             # 生成预测结果文件名并保存
@@ -315,6 +322,9 @@ def predict(args,io):
             output_image_filename = output_filename.replace('_predicted.txt', '_predicted.jpg')
             output_image_path = os.path.join(full_image_folder, output_image_filename)
             visualize_pointcloud(new_pointcloud, output_image_path)
+            
+            # 文件处理完成后清理内存
+            torch.cuda.empty_cache()
     # print("已保存: " + output_folder)
     io.cprint("已保存txt结果至: " + os.path.join(output_folder, "text"))
     io.cprint("已保存可视化图片至: " + os.path.join(output_folder, "image"))
