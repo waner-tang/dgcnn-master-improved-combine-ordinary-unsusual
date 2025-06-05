@@ -64,15 +64,15 @@ def load_data(self, dir_path):
 # 训练
 # subprocess.run([
 #     'python', 'pytorch/main.py',
-#     '--exp_name', 'test_my_data_three_classifications',
+#     '--exp_name', 'verify_three_classifications_with_matlab_data',
 #     '--model', 'dgcnn',
 #     '--epoch', '250'])
 # 测试
 subprocess.run([
     'python', 'pytorch/main.py',
-    '--exp_name', 'test_my_data_three_classifications',
+    '--exp_name', 'verify_three_classifications_with_matlab_data',
     '--model', 'dgcnn',
-    '--model_path', 'pytorch/checkpoints/test_my_data_three_classifications/models/model.t7',    # 待修改
+    '--model_path', 'pytorch/checkpoints/verify_three_classifications_with_matlab_data/models/model.t7',    # 待修改
     '--predict', 'True',
     '--predict_path', 'pytorch/dataset/test_set'])
 
