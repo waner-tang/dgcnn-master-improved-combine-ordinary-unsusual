@@ -27,6 +27,51 @@ from custom_data import create_dataloader
 import sklearn.metrics as metrics
 import matplotlib.pyplot as plt  # 添加用于可视化的包
 import matplotlib.colors as mcolors
+from sklearn.neighbors import NearestNeighbors
+
+
+def apply_morphological_postprocess(labels, points, args):
+    """
+    简单的形态学后处理
+    
+    Args:
+        labels: 预测标签 (N,)
+        points: 点云坐标 (N, 6) - [x, y, z, nx, ny, nz]
+        args: 参数对象，包含邻居数量等配置
+    
+    Returns:
+        processed_labels: 处理后的标签
+    """
+    # 使用坐标部分
+    coords = points[:, :3]
+    
+    # 构建邻居图
+    nbrs = NearestNeighbors(n_neighbors=args.morph_k_neighbors+1, algorithm='auto')
+    nbrs.fit(coords)
+    _, indices = nbrs.kneighbors(coords)
+    neighbors = indices[:, 1:]  # 排除自己
+    
+    processed_labels = labels.copy()
+    
+    # 简单的边界平滑
+    changed_count = 0
+    for i in range(len(labels)):
+        neighbor_labels = labels[neighbors[i]]
+        unique_labels, counts = np.unique(neighbor_labels, return_counts=True)
+        
+        # 如果大多数邻居是同一标签，则更新
+        if len(unique_labels) > 0:
+            majority_label = unique_labels[np.argmax(counts)]
+            max_count = np.max(counts)
+            
+            # 60%的邻居同意时才改变
+            if max_count >= args.morph_k_neighbors * 0.6 and processed_labels[i] != majority_label:
+                processed_labels[i] = majority_label
+                changed_count += 1
+    
+    print(f"  改变点数: {changed_count} ({changed_count/len(labels)*100:.1f}%)")
+    
+    return processed_labels
 
 
 def _init_():
@@ -311,7 +356,17 @@ def predict(args,io):
             torch.cuda.empty_cache()
             
             preds = preds + 1
-            new_pointcloud = np.hstack((data.reshape(-1,6),preds.cpu().numpy().reshape(-1,1)))
+            preds_numpy = preds.cpu().numpy().reshape(-1)
+            
+            # 应用形态学后处理（如果启用）
+            if args.use_morphological_postprocess:
+                io.cprint("应用形态学后处理...")
+                start_morph_time = time.time()
+                preds_numpy = apply_morphological_postprocess(preds_numpy, data.reshape(-1, 6), args)
+                morph_time = time.time() - start_morph_time
+                io.cprint(f"形态学后处理完成，用时: {morph_time:.3f}秒")
+            
+            new_pointcloud = np.hstack((data.reshape(-1,6), preds_numpy.reshape(-1,1)))
             # 生成预测结果文件名并保存
             # output_filename = os.path.splitext(os.path.basename(file))[0] + '_predicted.txt'
             # output_path = os.path.join(full_output_folder, output_filename)
@@ -444,6 +499,17 @@ if __name__ == "__main__":
                         help='Pretrained model path')
     parser.add_argument('--predict', type=bool, default=False,help='Predict the model')
     parser.add_argument('--predict_path', type=str, default='', metavar='N',help='Path to predict')
+    
+    # 形态学后处理参数
+    parser.add_argument('--use_morphological_postprocess', type=bool, default=False,
+                        help='Enable morphological post-processing')
+    parser.add_argument('--morph_k_neighbors', type=int, default=6,
+                        help='Number of neighbors for morphological processing')
+    parser.add_argument('--morph_min_component_size', type=int, default=8,
+                        help='Minimum component size to keep')
+    parser.add_argument('--morph_max_hole_size', type=int, default=4,
+                        help='Maximum hole size to fill')
+    
     args = parser.parse_args()
 
     _init_()  # -----------------added
