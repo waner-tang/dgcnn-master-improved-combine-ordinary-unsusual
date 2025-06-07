@@ -20,14 +20,16 @@ def main():
         "--use_morphological_postprocess", "True",
         "--morph_k_neighbors", "12",        # 邻居数量
         "--morph_min_component_size", "20", # 最小组件大小
-        "--morph_max_hole_size", "4"       # 最大空洞大小
+        "--morph_max_hole_size", "4",       # 最大空洞大小
+        "--morph_iterations", "5"           # 迭代次数
     ]
     
-    print("启动带形态学后处理的DGCNN推理...")
+    print("启动带迭代形态学后处理的DGCNN推理...")
     print("后处理配置:")
-    print(f"  - k邻居数: 6")
-    print(f"  - 预期时间增加: +0.5-1.0秒/文件")
-    print(f"  - 预期标签改变率: 3-5%")
+    print(f"  - k邻居数: 12")
+    print(f"  - 迭代次数: 5 (自动收敛停止)")
+    print(f"  - 预期时间增加: +1-2秒/文件")
+    print(f"  - 预期标签改变率: 5-10%")
     print()
     
     # 执行命令

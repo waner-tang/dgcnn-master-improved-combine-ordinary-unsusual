@@ -32,7 +32,7 @@ from sklearn.neighbors import NearestNeighbors
 
 def apply_morphological_postprocess(labels, points, args):
     """
-    简单的形态学后处理
+    迭代形态学后处理
     
     Args:
         labels: 预测标签 (N,)
@@ -52,24 +52,36 @@ def apply_morphological_postprocess(labels, points, args):
     neighbors = indices[:, 1:]  # 排除自己
     
     processed_labels = labels.copy()
+    total_changed = 0
     
-    # 简单的边界平滑
-    changed_count = 0
-    for i in range(len(labels)):
-        neighbor_labels = labels[neighbors[i]]
-        unique_labels, counts = np.unique(neighbor_labels, return_counts=True)
+    # 迭代处理，让修正效果传播到大块错误内部
+    for iteration in range(args.morph_iterations):
+        old_labels = processed_labels.copy()
+        iteration_changed = 0
         
-        # 如果大多数邻居是同一标签，则更新
-        if len(unique_labels) > 0:
-            majority_label = unique_labels[np.argmax(counts)]
-            max_count = np.max(counts)
+        for i in range(len(processed_labels)):
+            neighbor_labels = processed_labels[neighbors[i]]  # 使用当前迭代的标签
+            unique_labels, counts = np.unique(neighbor_labels, return_counts=True)
             
-            # 60%的邻居同意时才改变
-            if max_count >= args.morph_k_neighbors * 0.6 and processed_labels[i] != majority_label:
-                processed_labels[i] = majority_label
-                changed_count += 1
+            # 如果大多数邻居是同一标签，则更新
+            if len(unique_labels) > 0:
+                majority_label = unique_labels[np.argmax(counts)]
+                max_count = np.max(counts)
+                
+                # 60%的邻居同意时才改变
+                if max_count >= args.morph_k_neighbors * 0.6 and processed_labels[i] != majority_label:
+                    processed_labels[i] = majority_label
+                    iteration_changed += 1
+        
+        total_changed += iteration_changed
+        print(f"  第{iteration+1}轮: 改变{iteration_changed}个点")
+        
+        # 如果改变很少，提前停止
+        if iteration_changed < len(labels) * 0.001:  # 少于0.1%的点改变
+            print(f"  收敛，停止迭代")
+            break
     
-    print(f"  改变点数: {changed_count} ({changed_count/len(labels)*100:.1f}%)")
+    print(f"  总改变点数: {total_changed} ({total_changed/len(labels)*100:.1f}%)")
     
     return processed_labels
 
@@ -509,6 +521,8 @@ if __name__ == "__main__":
                         help='Minimum component size to keep')
     parser.add_argument('--morph_max_hole_size', type=int, default=4,
                         help='Maximum hole size to fill')
+    parser.add_argument('--morph_iterations', type=int, default=3,
+                        help='Number of morphological iterations')
     
     args = parser.parse_args()
 
