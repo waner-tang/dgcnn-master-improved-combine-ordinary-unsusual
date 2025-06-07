@@ -18,8 +18,8 @@ def main():
         
         # 启用形态学后处理
         "--use_morphological_postprocess", "True",
-        "--morph_k_neighbors", "6",        # 邻居数量
-        "--morph_min_component_size", "8", # 最小组件大小
+        "--morph_k_neighbors", "12",        # 邻居数量
+        "--morph_min_component_size", "20", # 最小组件大小
         "--morph_max_hole_size", "4"       # 最大空洞大小
     ]
     
